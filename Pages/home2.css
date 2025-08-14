@@ -16,8 +16,27 @@
     position: fixed;
     z-index: 10;
 }
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.close-btn {
+  display: none; 
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
 .home-navlist{
-    width: 75%;
+    width: 72%;
     display: flex;
     /* flex-direction: column; */
     justify-content: space-around;
@@ -39,12 +58,14 @@
     color: blue;
 }
 .signin:hover{
-    color: blue;
+    background-color: blue;
+    color: white;
     cursor: pointer;
 }
 .signin{
     font-size: 14px;
-   
+   border: 1px solid black;
+   padding: 8px;
 }
 .home-navlist ul {
   list-style: none;
@@ -124,6 +145,7 @@
     background-color: blue;
     color: white;
     border-radius: 10px;
+    border: 1px solid blue;
 }
 .home-about-child-button2:hover{
     background-color: red;
@@ -186,6 +208,12 @@
     color: blue;
 
 }
+.choose1{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
 .choose2{
     width: 200PX;
     /* background-color: aqua; */
@@ -201,6 +229,10 @@
 .choose2 img{
     width: 20%;
 }
+.choose2:hover{
+    background-color: gainsboro;
+    
+}
 .choose{
     width: 95%;
     
@@ -209,6 +241,7 @@
     align-items: center;
     justify-content: space-around;
     margin: auto;
+    
 }
 .num1{
     width: 60px;
@@ -216,6 +249,10 @@
     background-color: rgb(23, 129, 205);
     text-align: center;
     padding: 20px;
+}
+.num1:hover{
+    background-color: blue;
+    color: white;
 }
 .solution-child{
     width: 300px;
@@ -246,7 +283,7 @@
     width: 90%;
     /* background-color: aqua; */
     margin: auto;
-    margin-top: 100px;
+    margin-top: 140px;
     display: flex;
     /* align-items: center; */
     justify-content: center;
@@ -255,4 +292,294 @@
 .sol-img{
     width: 500px;
     height: 550px;
+}
+.solution-child:hover{
+    background-color: gainsboro;
+}
+
+.offer{
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    gap: 20px;
+    box-shadow: 0  15px 20px gainsboro;
+
+}
+.offer:hover{
+    background-color: gainsboro;
+}
+.offer-child{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.offer-child-main{
+   display: grid;
+   grid-template-columns: repeat(2,1fr); 
+   gap: 40px; 
+}
+.offer-main{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    margin-top: 70px;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.pricing-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.section-subtitle {
+    color: #3b57ff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pricing-card {
+    background: #f6f8fc;
+    border-radius: 10px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    background-color: rgb(222, 241, 254);
+}
+
+.plan-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.plan-price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3b57ff;
+    margin-bottom: 20px;
+}
+
+.plan-price span {
+    font-size: 14px;
+    color: #555;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.plan-features li {
+    margin: 10px 0;
+    
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(32, 167, 212);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #2f45d0;
+}
+
+
+.updates-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.sub-title {
+    color: #2b6ef3;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.updates-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.update-card {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.update-card img {
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.meta {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.meta i {
+    margin-right: 5px;
+    color: #2b6ef3;
+}
+.card-content a{
+    text-decoration: none;
+    color: blue ;
+    font-size: 14px;
+}
+.card-content h3{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .home-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .home-navlist {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    flex-direction: column;
+    padding-top: 80px;
+    transition: left 0.3s ease;
+    z-index: 999;
+    
+  }
+
+  .home-navlist ul {
+    display: contents;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .home-navlist.active {
+    left: 0; 
+  }
+
+  .menu-btn {
+    display: block;
+  
+    padding-right: 20px;
+  }
+
+ 
+  .home-navlist ul li {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .home-navlist ul li a {
+    display: block;
+    padding: 12px 20px;
+  }
+  .close-btn {
+    display: block;
+  }
+}
+@media (max-width: 555px){
+  .home-about2{
+    max-width: 100%;
+  }
+  .home-about-child2{
+    width: 75%;
+
+  }
+  .home-main-img2{
+    height: 500px;
+  }
+ 
+}
+@media (max-width: 555px){
+  .home-about-child2{
+    width: 70%;
+  }
+  
+  .home-about-child-button2{
+    width: 60%;
+  }
+}
+@media (max-width: 375px){
+  .home-about-child2{
+    width: 60%;
+  }
+  .signin{
+    padding: 4px;
+
+  }
+  .home-logo img{
+    padding: 0;
+    width: 150px;
+  }
+  .home-about-child-button2{
+    width: 60%;
+  }
+ 
 }

@@ -9,39 +9,60 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <nav class="home-nav">
+      <div class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></div>
       <div class="home-logo">
         <img src="./images/logo-removebg-preview.png" alt="" />
       </div>
-      <div class="home-navlist">
+      <div class="home-navlist" id="sidebarMenu">
+        <span class="close-btn" id="closeBtn"
+          ><i class="fa-solid fa-xmark"></i
+        ></span>
         <ul>
-          <li class="dropdown" id="homeDropdownWrapper">
-            <a href="./index.html" >Home <span id="homeLink">▼</span></a>
+          <!-- <li class="dropdown" id="homeDropdownWrapper">
+            <a href="./index.html">Home <span id="homeLink">▼</span></a>
             <ul class="dropdown-menu" id="homeDropdown">
               <li><a href="./Pages/home2.html">Home2</a></li>
             </ul>
-          </li>
-          <li><a href="#">About Us</a></li>
+          </li> -->
+          <li><a href="./Pages/home2.html">Home</a></li>
+          <li><a href="./Pages/about.html">About Us</a></li>
           <li class="dropdown" id="serviceDropdownWrapper">
-            <a href="#" id="serviceLink">Service ▼</a>
+            <a href="./Pages/about.html" id="serviceLink">Service ▼</a>
             <ul class="dropdown-menu" id="serviceDropdown">
               <li><a href="service2.html">Service2</a></li>
             </ul>
           </li>
-
           <li class="dropdown" id="blogDropdownWrapper">
-            <a href="#" id="blogLink">Blog ▼</a>
+            <a href="./Pages/about.html" id="blogLink">Blog ▼</a>
             <ul class="dropdown-menu" id="blogDropdown">
-              <li><a href="blog2.html">Blog2</a></li>
+              <li><a href="./Pages/about.html">Blog2</a></li>
             </ul>
           </li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="./Pages/about.html">Contact Us</a></li>
         </ul>
       </div>
-        <P class="signin"> <i class="fa-solid fa-user"></i>LOG IN</P>
+
+      <p class="signin"><i class="fa-solid fa-user"></i>LOG IN</p>
     </nav>
+
     <div class="home-about">
       <img class="home-main-img" src="./images/home1stimage.jpeg" alt="" />
       <div class="home-about-child">
@@ -52,10 +73,15 @@
       </div>
     </div>
     <div class="home-cont1">
-      <img class="home-cont1-img" src="./images/img2.jpeg" alt="" />
-      <div class="home-cont1-child">
-        <h4>GET BEST IT SOLUTION 2025</h4>
-        <h1>TRUST OUR BEST IT SOLUTION</h1>
+      <img
+        data-aos="fade-up"
+        class="home-cont1-img"
+        src="./images/img2.jpeg"
+        alt=""
+      />
+      <div data-aos="fade-up" class="home-cont1-child">
+        <h4>GET BEST IT SOLUTION 2025 TRUST OUR BEST IT SOLUTION</h4>
+
         <p>
           Compellingly mesh cross-platform portals through functional human
           capital world-class architectures for orthogonal initiatives.
@@ -76,9 +102,8 @@
         WHAT KIND OF SERVICES <br />
         WE ARE OFFERING
       </h2>
-
       <div class="services-container">
-        <div class="service-card">
+        <div data-aos="flip-left" class="service-card">
           <div class="icon"><i class="fa-solid fa-cloud"></i></div>
           <h3>Cloud Services</h3>
           <p>
@@ -90,7 +115,7 @@
           ></a>
         </div>
 
-        <div class="service-card">
+        <div data-aos="flip-left" class="service-card">
           <div class="icon"><i class="fa-solid fa-code"></i></div>
           <h3>UI Development</h3>
           <p>
@@ -102,7 +127,7 @@
           ></a>
         </div>
 
-        <div class="service-card">
+        <div data-aos="flip-left" class="service-card">
           <div class="icon"><i class="fa-solid fa-bullhorn"></i></div>
           <h3>Digital Marketing</h3>
           <p>
@@ -114,7 +139,7 @@
           ></a>
         </div>
 
-        <div class="service-card">
+        <div data-aos="flip-left" class="service-card">
           <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
           <h3>Web Development</h3>
           <p>
@@ -126,7 +151,7 @@
           ></a>
         </div>
 
-        <div class="service-card">
+        <div data-aos="flip-left" class="service-card">
           <div class="icon"><i class="fa-solid fa-gears"></i></div>
           <h3>Software Services</h3>
           <p>
@@ -138,7 +163,7 @@
           ></a>
         </div>
 
-        <div class="service-card">
+        <div data-aos="flip-left" class="service-card">
           <div class="icon"><i class="fa-solid fa-brain"></i></div>
           <h3>Machine Learning</h3>
           <p>
@@ -152,7 +177,7 @@
       </div>
     </section>
 
-    <section class="stats-section">
+    <section data-aos="fade-up" class="stats-section">
       <div class="stat-box">
         <div class="icon2">
           <i class="fas fa-chart-line"></i>
@@ -190,34 +215,39 @@
       <h5>GREAT TEAM MEMBERS</h5>
       <h2>WE HAVE EXPERT TEAM</h2>
       <div class="home-team-child-main">
-        <div class="home-team-child">
-          <img src="./images/member3.jpg" alt="" />
-          <h4>Alexander Manson</h4>
-          <h6>Founder & CEO</h6>
+        <div data-aos="flip-left">
+          <div class="home-team-child">
+            <img src="./images/member3.jpg" alt="" />
+            <h4>Alexander Manson</h4>
+            <h6>Founder & CEO</h6>
+          </div>
         </div>
-        <div class="home-team-child">
-          <img src="./images/member1.jpg" alt="" />
-          <h4>Marian Widiya</h4>
-          <h6>Lead developer</h6>
+        <div data-aos="flip-left">
+          <div class="home-team-child">
+            <img src="./images/member1.jpg" alt="" />
+            <h4>Marian Widiya</h4>
+            <h6>Lead developer</h6>
+          </div>
         </div>
-        <div class="home-team-child">
-          <img src="./images/member2.jpg" alt="" />
-          <h4>Danniel Mathew</h4>
-          <h6>Cheif expert</h6>
+        <div data-aos="flip-left">
+          <div class="home-team-child">
+            <img src="./images/member2.jpg" alt="" />
+            <h4>Danniel Mathew</h4>
+            <h6>Cheif expert</h6>
+          </div>
         </div>
-        <div class="home-team-child">
-          <img src="./images/member4.jpg" alt="" />
-          <h4>Maverick Cameron</h4>
-          <h6>Pro Developer</h6>
+        <div data-aos="flip-left">
+          <div class="home-team-child">
+            <img src="./images/member4.jpg" alt="" />
+            <h4>Maverick Cameron</h4>
+            <h6>Pro Developer</h6>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="home-clients">
-      <h2>
-        ------------------------------------------------------Our Trusted
-        Clients----------------------------------------------------
-      </h2>
+    <div data-aos="fade-up" class="home-clients">
+      <h2>Our Trusted Clients</h2>
       <div class="home-clients-child">
         <div>
           <h4 style="color: blue">BUSINESS</h4>
@@ -308,12 +338,20 @@
 
       <div class="footer-copy">
         <p>
-          Copyright © 2025 <span>TechBiz</span>. All Rights Reserved By
+          Copyright © 2025 <span>Stackly</span>. All Rights Reserved By
           <span>Vecuro</span>.
         </p>
       </div>
     </footer>
 
+    <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: true,
+      });
+    </script>
     <script src="./Pages/home.js"></script>
   </body>
 </html>
