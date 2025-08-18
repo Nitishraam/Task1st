@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     menu.style.display = "none";
   });
 
-  setupDropdown("homeLink", "homeDropdown", "homeDropdownWrapper");
+  // setupDropdown("homeLink", "homeDropdown", "homeDropdownWrapper");
   setupDropdown("serviceLink", "serviceDropdown", "serviceDropdownWrapper");
   setupDropdown("blogLink", "blogDropdown", "blogDropdownWrapper");
 });
