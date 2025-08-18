@@ -60,7 +60,7 @@
         </ul>
       </div>
 
-      <p class="signin"><i class="fa-solid fa-user"></i>LOG IN</p>
+      <a class="signin" href="./Pages/about.html"><p ><i class="fa-solid fa-user"></i>LOG IN</p></a>
     </nav>
 
     <div class="home-about">
@@ -69,7 +69,7 @@
         <p class="aa">We Have Top IT Expert</p>
         <h1>Best IT Service</h1>
         <h1>SERVICE & SOLUTION 2025</h1>
-        <button class="home-about-child-button">ABOUT US</button>
+        <a href="./Pages/about.html"><button class="home-about-child-button">ABOUT US</button></a>
       </div>
     </div>
     <div class="home-cont1">
@@ -80,7 +80,7 @@
         alt=""
       />
       <div data-aos="fade-up" class="home-cont1-child">
-        <h4>GET BEST IT SOLUTION 2025 TRUST OUR BEST IT SOLUTION</h4>
+        <h4 style="color: red;">GET BEST IT SOLUTION 2025 TRUST OUR BEST IT SOLUTION</h4>
 
         <p>
           Compellingly mesh cross-platform portals through functional human
@@ -92,7 +92,7 @@
           <h3>24 HOURS SERVICE AVAILABLE</h3>
           <h4>Call Us: +(667) 778 3400</h4>
         </div>
-        <butto class="home-callus-btn">ABOUT US</butto>
+        <a href="./Pages/about.html"><button class="home-callus-btn">ABOUT US</button></a>
       </div>
     </div>
 
@@ -247,7 +247,7 @@
     </div>
 
     <div data-aos="fade-up" class="home-clients">
-      <h2>Our Trusted Clients</h2>
+      <h2 style="color: rgb(141, 14, 173);">Our Trusted Clients</h2>
       <div class="home-clients-child">
         <div>
           <h4 style="color: blue">BUSINESS</h4>
@@ -349,7 +349,8 @@
       // initialization of aos
       AOS.init({
         duration: 650,
-        once: true,
+         once: false,
+        mirror:true,
       });
     </script>
     <script src="./Pages/home.js"></script>

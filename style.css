@@ -68,6 +68,8 @@
     font-size: 14px;
    border: 1px solid black;
    padding: 8px;
+   text-decoration: none;
+   color: black;
 }
 .home-navlist ul {
   list-style: none;
@@ -191,7 +193,9 @@
 .home-cont1-child p{
     width: 80%;
     font-size: 14px;
+    
 }
+
 .home-callus-btn{
     width: 20%;
     text-align: center;
