@@ -24,6 +24,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="home-nav">
@@ -45,13 +51,13 @@
           <li><a href="./Pages/home2.html">Home</a></li>
           <li><a href="./Pages/about.html">About Us</a></li>
           <li class="dropdown" id="serviceDropdownWrapper">
-           <a href="./error.html" >Service <span id="serviceLink">▼</span> </a>
+            <a href="./error.html">Service <span id="serviceLink">▼</span> </a>
             <ul class="dropdown-menu" id="serviceDropdown">
               <li><a href="error.html">Service2</a></li>
             </ul>
           </li>
           <li class="dropdown" id="blogDropdownWrapper">
-           <a href="./error.html">Blog <span id="blogLink">▼</span></a>
+            <a href="./error.html">Blog <span id="blogLink">▼</span></a>
             <ul class="dropdown-menu" id="blogDropdown">
               <li><a href="./Pages/error.html">Blog2</a></li>
             </ul>
@@ -60,29 +66,35 @@
         </ul>
       </div>
 
-      <a class="signin" href="./Pages/error.html"><p ><i class="fa-solid fa-user"></i>LOG IN</p></a>
+      <a class="signin" href="./Pages/error.html"
+        ><p><i class="fa-solid fa-user"></i>LOG IN</p></a
+      >
     </nav>
 
     <div class="home-about">
       <img class="home-main-img" src="./images/home1stimage.jpeg" alt="" />
-      <div class="home-about-child">
+      <div data-aos="zoom-in" class="home-about-child">
         <p class="aa">We Have Top IT Expert</p>
         <h1>Best IT Service</h1>
         <h1>SERVICE & SOLUTION 2025</h1>
-        <a href="./Pages/error.html"><button class="home-about-child-button">ABOUT US</button></a>
+        <a href="./Pages/error.html"
+          ><button class="home-about-child-button">ABOUT US</button></a
+        >
       </div>
     </div>
     <div class="home-cont1">
       <img
-        data-aos="fade-up"
+        data-aos="zoom-in"
         class="home-cont1-img"
         src="./images/img2.jpeg"
         alt=""
       />
       <div data-aos="fade-up" class="home-cont1-child">
-        <h4 style="color: red;">GET BEST IT SOLUTION 2025 TRUST OUR BEST IT SOLUTION</h4>
+        <h4 style="color: blue; font-size: 14px;">
+          GET BEST IT SOLUTION 2025 TRUST OUR BEST IT SOLUTION
+        </h4>
 
-        <p>
+        <p style="line-height: 25px;">
           Compellingly mesh cross-platform portals through functional human
           capital world-class architectures for orthogonal initiatives.
           Assertively benchmark visionary quality vectors after covalent
@@ -92,18 +104,25 @@
           <h3>24 HOURS SERVICE AVAILABLE</h3>
           <h4>Call Us: +(667) 778 3400</h4>
         </div>
-        <a href="./Pages/error.html"><button class="home-callus-btn">ABOUT US</button></a>
+        <a href="./Pages/error.html"
+          ><button class="home-callus-btn">ABOUT US</button></a
+        >
       </div>
     </div>
 
     <section class="services-section">
-      <h4>OUR LATEST SERVICES</h4>
-      <h2>
+      <h4 data-aos="zoom-in">OUR LATEST SERVICES</h4>
+      <h2 data-aos="zoom-in">
         WHAT KIND OF SERVICES <br />
         WE ARE OFFERING
       </h2>
       <div class="services-container">
-        <div data-aos="flip-left" class="service-card">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          class="service-card"
+        >
           <div class="icon"><i class="fa-solid fa-cloud"></i></div>
           <h3>Cloud Services</h3>
           <p>
@@ -115,7 +134,12 @@
           ></a>
         </div>
 
-        <div data-aos="flip-left" class="service-card">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          class="service-card"
+        >
           <div class="icon"><i class="fa-solid fa-code"></i></div>
           <h3>UI Development</h3>
           <p>
@@ -127,7 +151,12 @@
           ></a>
         </div>
 
-        <div data-aos="flip-left" class="service-card">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          class="service-card"
+        >
           <div class="icon"><i class="fa-solid fa-bullhorn"></i></div>
           <h3>Digital Marketing</h3>
           <p>
@@ -139,7 +168,12 @@
           ></a>
         </div>
 
-        <div data-aos="flip-left" class="service-card">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          class="service-card"
+        >
           <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
           <h3>Web Development</h3>
           <p>
@@ -151,7 +185,12 @@
           ></a>
         </div>
 
-        <div data-aos="flip-left" class="service-card">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          class="service-card"
+        >
           <div class="icon"><i class="fa-solid fa-gears"></i></div>
           <h3>Software Services</h3>
           <p>
@@ -163,7 +202,12 @@
           ></a>
         </div>
 
-        <div data-aos="flip-left" class="service-card">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          class="service-card"
+        >
           <div class="icon"><i class="fa-solid fa-brain"></i></div>
           <h3>Machine Learning</h3>
           <p>
@@ -212,31 +256,47 @@
     </section>
 
     <div class="home-team">
-      <h5>GREAT TEAM MEMBERS</h5>
-      <h2>WE HAVE EXPERT TEAM</h2>
+      <h5 data-aos="zoom-in">GREAT TEAM MEMBERS</h5>
+      <h2 data-aos="zoom-in">WE HAVE EXPERT TEAM</h2>
       <div class="home-team-child-main">
-        <div data-aos="flip-left">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
           <div class="home-team-child">
             <img src="./images/member3.jpg" alt="" />
             <h4>Alexander Manson</h4>
             <h6>Founder & CEO</h6>
           </div>
         </div>
-        <div data-aos="flip-left">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
           <div class="home-team-child">
             <img src="./images/member1.jpg" alt="" />
             <h4>Marian Widiya</h4>
             <h6>Lead developer</h6>
           </div>
         </div>
-        <div data-aos="flip-left">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
           <div class="home-team-child">
             <img src="./images/member2.jpg" alt="" />
             <h4>Danniel Mathew</h4>
             <h6>Cheif expert</h6>
           </div>
         </div>
-        <div data-aos="flip-left">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
           <div class="home-team-child">
             <img src="./images/member4.jpg" alt="" />
             <h4>Maverick Cameron</h4>
@@ -247,14 +307,14 @@
     </div>
 
     <div data-aos="fade-up" class="home-clients">
-      <h2 style="color: rgb(141, 14, 173);">Our Trusted Clients</h2>
+      <h2 style="padding-bottom: 10px;">Our Trusted Clients</h2>
       <div class="home-clients-child">
         <div>
           <h4 style="color: blue">BUSINESS</h4>
           <p style="font-size: 12px">commerical property</p>
         </div>
         <div>
-          <h4 style="color: green">greenlab</h4>
+          <h4 style="color: rgb(0, 128, 111)">greenlab</h4>
           <p style="font-size: 12px">biotechnology</p>
         </div>
         <div>
@@ -349,8 +409,8 @@
       // initialization of aos
       AOS.init({
         duration: 650,
-         once: false,
-        mirror:true,
+        once: false,
+        mirror: true,
       });
     </script>
     <script src="./Pages/home.js"></script>
