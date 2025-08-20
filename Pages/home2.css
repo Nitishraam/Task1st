@@ -99,7 +99,7 @@ body.dark-mode .home-nav a {
 .home-navlist ul {
   list-style: none;
   display: flex;
-  gap: 13px;
+  gap: 20px;
   padding: 0;
   margin: 0;
 }
