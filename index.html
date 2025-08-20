@@ -224,16 +224,16 @@
       </div>
     </section>
 
-    <section data-aos="fade-up" class="stats-section">
-      <div class="stat-box">
+    <section id="impact"  data-aos="fade-up" class="stats-section">
+      <div data-aos="zoom-in" class="stat-box">
         <div class="icon2">
           <i class="fas fa-chart-line"></i>
         </div>
-        <h2 class="counter" data-target="750">0</h2>
+        <h2  class="counter" data-target="750">0</h2>
         <p>SUCCESSFUL PROJECTS</p>
       </div>
 
-      <div class="stat-box">
+      <div data-aos="zoom-in" class="stat-box">
         <div class="icon2">
           <i class="fas fa-bullhorn"></i>
         </div>
@@ -241,7 +241,7 @@
         <p>MEDIA ACTIVITIES</p>
       </div>
 
-      <div class="stat-box">
+      <div data-aos="zoom-in" class="stat-box">
         <div class="icon2">
           <i class="fas fa-user-tie"></i>
         </div>
@@ -249,7 +249,7 @@
         <p>SKILLED EXPERTS</p>
       </div>
 
-      <div class="stat-box">
+      <div data-aos="zoom-in" class="stat-box">
         <div class="icon2">
           <i class="fas fa-users"></i>
         </div>
@@ -432,28 +432,45 @@
 
 
     <script>
-      // number increment
-    const counters = document.querySelectorAll('.counter');
-    const speed = 50; 
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+    const speed = 150; 
 
-    counters.forEach(counter => {
+    const animateCounter = (counter) => {
+      const target = +counter.getAttribute("data-target");
       const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
         const count = +counter.innerText;
-
         const increment = Math.ceil(target / speed);
 
         if (count < target) {
           counter.innerText = count + increment;
-          setTimeout(updateCount, 30);
+          setTimeout(updateCount, 20);
         } else {
           counter.innerText = target;
         }
       };
-
       updateCount();
+    };
+
+  
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            observer.unobserve(entry.target); 
+          }
+        });
+      },
+      { threshold: 0.5 } 
+    );
+
+    counters.forEach(counter => {
+      observer.observe(counter);
     });
-  </script>
+  });
+</script>
+
   
 
       <script>
