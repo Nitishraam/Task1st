@@ -229,7 +229,7 @@
         <div class="icon2">
           <i class="fas fa-chart-line"></i>
         </div>
-        <h2>750</h2>
+        <h2 class="counter" data-target="750">0</h2>
         <p>SUCCESSFUL PROJECTS</p>
       </div>
 
@@ -237,7 +237,7 @@
         <div class="icon2">
           <i class="fas fa-bullhorn"></i>
         </div>
-        <h2>670</h2>
+        <h2 class="counter" data-target="350">0</h2>
         <p>MEDIA ACTIVITIES</p>
       </div>
 
@@ -245,7 +245,7 @@
         <div class="icon2">
           <i class="fas fa-user-tie"></i>
         </div>
-        <h2>560</h2>
+        <h2 class="counter" data-target="150">0</h2>
         <p>SKILLED EXPERTS</p>
       </div>
 
@@ -253,7 +253,7 @@
         <div class="icon2">
           <i class="fas fa-users"></i>
         </div>
-        <h2>25</h2>
+        <h2 class="counter" data-target="125"></h2>
         <p>HAPPY CLIENTS</p>
       </div>
     </section>
@@ -429,6 +429,32 @@
         </p>
       </div>
     </footer>
+
+
+    <script>
+      // number increment
+    const counters = document.querySelectorAll('.counter');
+    const speed = 50; 
+
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+
+        const increment = Math.ceil(target / speed);
+
+        if (count < target) {
+          counter.innerText = count + increment;
+          setTimeout(updateCount, 30);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCount();
+    });
+  </script>
+  
 
       <script>
   //  mode
