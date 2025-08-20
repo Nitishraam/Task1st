@@ -48,7 +48,7 @@
           </li> -->
 
           <li><a href="../index.html">Home</a></li>
-          <li><a href="./about.html">Team</a></li>
+          <li><a href="./error.html">Team</a></li>
           <li class="dropdown" id="serviceDropdownWrapper">
             <a href="./error.html">Pricing </a>
             <!-- <ul class="dropdown-menu" id="serviceDropdown">
@@ -64,6 +64,9 @@
           <li><a href="./error.html">Contact</a></li>
         </ul>
       </div>
+
+      <button class="mode-toggle" id="mode-toggle">🌑 <span style="font-size: 18px;">Mode</span></button>
+
 
       <a class="signin" href="./error.html"><p>Consulting Now</p></a>
     </nav>
@@ -102,7 +105,7 @@
           Seize magnetic before visa alignment network wireless whereas
           frictionless
         </p>
-        <h6>READ DETAILS <i class="fa-solid fa-arrow-right"></i></h6>
+        <h6 style="color: blue;">READ DETAILS <i class="fa-solid fa-arrow-right"></i></h6>
       </div>
       <div
         data-aos="flip-left"
@@ -119,7 +122,7 @@
           Seize magnetic before visa alignment network wireless whereas
           frictionless
         </p>
-        <h6>READ DETAILS <i class="fa-solid fa-arrow-right"></i></h6>
+        <h6 style="color: blue;">READ DETAILS <i class="fa-solid fa-arrow-right"></i></h6>
       </div>
       <div
         data-aos="flip-left"
@@ -136,7 +139,7 @@
           Seize magnetic before visa alignment network wireless whereas
           frictionless
         </p>
-        <h6>READ DETAILS <i class="fa-solid fa-arrow-right"></i></h6>
+        <h6 style="color: blue;">READ DETAILS <i class="fa-solid fa-arrow-right"></i></h6>
       </div>
     </div>
 
@@ -149,7 +152,7 @@
           <p class="num1">01</p>
           <div class="solution-child2">
             <h4>We Deliver Perfect Solution</h4>
-            <p style="font-size: 15px; line-height: 24px">
+            <p style="font-size: 14px; line-height: 25px">
               Rapidiously leverage existing quality services with wireless
               bandwidth seize functionalized methods…
             </p>
@@ -159,7 +162,7 @@
           <p class="num1">02</p>
           <div class="solution-child2">
             <h4>Specialised Support Service</h4>
-            <p style="font-size: 15px; line-height: 24px">
+            <p style="font-size: 14px; line-height: 25px">
               Rapidiously leverage existing quality services with wireless
               bandwidth seize functionalized methods…
             </p>
@@ -169,7 +172,7 @@
           <p class="num1">03</p>
           <div class="solution-child2">
             <h4>We Deliver Perfect Solution</h4>
-            <p style="font-size: 15px; line-height: 24px">
+            <p style="font-size: 14px; line-height: 25px">
               Rapidiously leverage existing quality services with wireless
               bandwidth seize functionalized methods…
             </p>
@@ -271,7 +274,7 @@
             <li>* Conversational Bots</li>
             <li>* Programmable Chatbots</li>
           </ul>
-          <a href="#" class="btn">Get Started →</a>
+          <a href="./error.html" class="btn">Get Started →</a>
         </div>
 
         <div data-aos="zoom-in-up" class="pricing-card">
@@ -284,7 +287,7 @@
             <li>* Conversational Bots</li>
             <li>* Programmable Chatbots</li>
           </ul>
-          <a href="#" class="btn">Get Started →</a>
+          <a href="./error.html" class="btn">Get Started →</a>
         </div>
 
         <div data-aos="zoom-in-up" class="pricing-card">
@@ -297,7 +300,7 @@
             <li>* Conversational Bots</li>
             <li>* Programmable Chatbots</li>
           </ul>
-          <a href="#" class="btn">Get Started →</a>
+          <a href="./error.html" class="btn">Get Started →</a>
         </div>
       </div>
     </section>
@@ -314,11 +317,11 @@
           />
           <div class="card-content">
             <p class="meta">
-              <i class="fa-regular fa-calendar"></i> 05 Aug, 2022
+              <i class="fa-regular fa-calendar"></i> 05 Aug, 2022 <br>
               <i class="fa-regular fa-user"></i> Rodja Hartmann
             </p>
             <h3>The passage experienced a surge in during</h3>
-            <a href="#">READ DETAILS <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="./error.html">READ DETAILS <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
 
@@ -328,11 +331,11 @@
           />
           <div class="card-content">
             <p class="meta">
-              <i class="fa-regular fa-calendar"></i> 08 Aug, 2025
+              <i class="fa-regular fa-calendar"></i> 08 Aug, 2025 <br>
               <i class="fa-regular fa-user"></i> Rodja Hartmann
             </p>
             <h3>Richard McClintock, a Latin scholar from</h3>
-            <a href="#">READ DETAILS <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="./error.html">READ DETAILS <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
 
@@ -343,11 +346,11 @@
           />
           <div class="card-content">
             <p class="meta">
-              <i class="fa-regular fa-calendar"></i> 13 Aug, 2025
+              <i class="fa-regular fa-calendar"></i> 13 Aug, 2025 <br>
               <i class="fa-regular fa-user"></i> Rodja Hartmann
             </p>
             <h3>Latin derived from Cicero's 1st-century BC</h3>
-            <a href="#">READ DETAILS <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="./error.html">READ DETAILS <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -428,6 +431,21 @@
         </p>
       </div>
     </footer>
+
+       <script>
+  //  mode
+    const toggleBtn = document.getElementById("mode-toggle");
+    const body = document.body;
+
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+      if (body.classList.contains("dark-mode")) {
+        toggleBtn.textContent = "🌕 Mode"; 
+      } else {
+        toggleBtn.textContent = "🌑 Mode"; 
+      }
+    });
+  </script>
 
     <script>
       // $(document).on('ready', function () {

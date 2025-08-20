@@ -63,10 +63,13 @@
             </ul>
           </li>
           <li><a href="./Pages/error.html">Contact Us</a></li>
+          <li><a href="">Dashboard</a></li>
         </ul>
       </div>
 
-      <a class="signin" href="./Pages/error.html"
+      <button class="mode-toggle" id="mode-toggle">🌑 <span style="font-size: 18px;">Mode</span></button>
+
+      <a class="signin" href="./Pages/login.html"
         ><p><i class="fa-solid fa-user"></i>LOG IN</p></a
       >
     </nav>
@@ -86,9 +89,9 @@
       <img
         data-aos="zoom-in"
         class="home-cont1-img"
-        src="./images/img2.jpeg"
-        alt=""
-      />
+         src="https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/2022/09/ab-4-1.jpg" alt="Team Working">
+        
+    
       <div data-aos="fade-up" class="home-cont1-child">
         <h4 style="color: blue; font-size: 14px;">
           GET BEST IT SOLUTION 2025 TRUST OUR BEST IT SOLUTION
@@ -102,7 +105,7 @@
         </p>
         <div class="home-callus">
           <h3>24 HOURS SERVICE AVAILABLE</h3>
-          <h4>Call Us: +(667) 778 3400</h4>
+          <h4 style="color: blue;">Call Us: +91 9123456789</h4>
         </div>
         <a href="./Pages/error.html"
           ><button class="home-callus-btn">ABOUT US</button></a
@@ -129,7 +132,7 @@
             Deliver plug commerce with dynamic is expertise. leading edge
             products with business models
           </p>
-          <a href="" class="cont-btn"
+          <a href="./Pages/error.html" class="cont-btn"
             >READ MORE <i class="fa-solid fa-arrow-right"></i
           ></a>
         </div>
@@ -146,7 +149,7 @@
             Deliver plug commerce with dynamic is expertise. leading edge
             products with business models
           </p>
-          <a href="" class="cont-btn"
+          <a  href="./Pages/error.html"class="cont-btn"
             >READ MORE <i class="fa-solid fa-arrow-right"></i
           ></a>
         </div>
@@ -163,7 +166,7 @@
             Deliver plug commerce with dynamic is expertise. leading edge
             products with business models
           </p>
-          <a href="" class="cont-btn"
+          <a  href="./Pages/error.html" class="cont-btn"
             >READ MORE <i class="fa-solid fa-arrow-right"></i
           ></a>
         </div>
@@ -180,7 +183,7 @@
             Deliver plug commerce with dynamic is expertise. leading edge
             products with business models
           </p>
-          <a href="" class="cont-btn"
+          <a  href="./Pages/error.html" class="cont-btn"
             >READ MORE <i class="fa-solid fa-arrow-right"></i
           ></a>
         </div>
@@ -197,7 +200,7 @@
             Deliver plug commerce with dynamic is expertise. leading edge
             products with business models
           </p>
-          <a href="" class="cont-btn"
+          <a  href="./Pages/error.html" class="cont-btn"
             >READ MORE <i class="fa-solid fa-arrow-right"></i
           ></a>
         </div>
@@ -214,7 +217,7 @@
             Deliver plug commerce with dynamic is expertise. leading edge
             products with business models
           </p>
-          <a href="" class="cont-btn"
+          <a href="./Pages/error.html" class="cont-btn"
             >READ MORE <i class="fa-solid fa-arrow-right"></i
           ></a>
         </div>
@@ -305,6 +308,29 @@
         </div>
       </div>
     </div>
+
+     <section class="about-section">
+    <div data-aos="zoom-in" class="about-content">
+      <span class="subtitle">ABOUT OUR COMPANY</span>
+      <h1>Connecting People And <br> Build Technology</h1>
+
+      <div class="experience-box">
+        <h2>25</h2>
+        <div>
+          <h3>Years Experience</h3>
+          <p style="font-size: 14px; ;line-height: 28px;">Energistically brand efficient paradigms vis resource maximizing process improvements. Dramatically repurpose stand-alone bandwidth after centric strategic theme areas. Intrinsicly build synergistic….</p>
+        </div>
+      </div>
+
+      <a href="./Pages/error.html" class="btn">Learn More →</a>
+    </div>
+
+    <div class="about-images">
+      <div data-aos="flip-left" class="img-box large">
+      <img src="https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/layerslider/projects/TechBiz-Slider-3/hero-3-2.jpg" alt="">
+      </div>
+     
+  </section>
 
     <div data-aos="fade-up" class="home-clients">
       <h2 style="padding-bottom: 10px;">Our Trusted Clients</h2>
@@ -404,7 +430,23 @@
       </div>
     </footer>
 
+      <script>
+  //  mode
+    const toggleBtn = document.getElementById("mode-toggle");
+    const body = document.body;
+
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+      if (body.classList.contains("dark-mode")) {
+        toggleBtn.textContent = "🌕 Mode"; 
+      } else {
+        toggleBtn.textContent = "🌑 Mode"; 
+      }
+    });
+  </script>
+
     <script>
+      // aos
       // $(document).on('ready', function () {
       // initialization of aos
       AOS.init({
