@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./service.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+     <nav class="home-nav">
+      <div class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></div>
+      <div class="home-logo">
+        <img src="../images/logo-removebg-preview.png" alt="" />
+      </div>
+      <div class="home-navlist" id="sidebarMenu">
+        <span class="close-btn" id="closeBtn"
+          ><i class="fa-solid fa-xmark"></i
+        ></span>
+        <ul>
+          <!-- <li class="dropdown" id="homeDropdownWrapper">
+            <a href="../index.html">Home <span id="homeLink">▼</span></a>
+            <ul class="dropdown-menu" id="homeDropdown">
+              <li><a href="./Pages/home2.html">Home2</a></li>
+            </ul>
+          </li> -->
+
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li class="dropdown" id="serviceDropdownWrapper">
+            <a href="./error.html">Service <span id="serviceLink">▼</span> </a>
+            <ul class="dropdown-menu" id="serviceDropdown">
+              <li><a href="error.html">Service2</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" id="blogDropdownWrapper">
+            <a href="./error.html">Blog <span id="blogLink">▼</span></a>
+            <ul class="dropdown-menu" id="blogDropdown">
+              <li><a href="./error.html">Blog2</a></li>
+            </ul>
+          </li>
+          <li><a href="./error.html">Contact Us</a></li>
+          <li><a href="./error.html">Dashboard</a></li>
+        </ul>
+      </div>
+
+      <button class="mode-toggle" id="mode-toggle">🌑</button>
+
+      <a class="signin" href="./login.html"
+        ><p><i class="fa-solid fa-user"></i>LOG IN</p></a
+      >
+    </nav>
+
+     <section class="banner">
+    <div class="banner-wrapper">
+      <div class="banner-photo">
+        <img src="https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/layerslider/projects/TechBiz-Slider-3/hero-3-3.jpg" alt="People with tablet">
+      </div>
+      <div class="banner-info">
+        <p class="tagline">Solve Problems, Change Lives</p>
+        <h1>
+          Clear Thinking <br>
+          <span>Creates</span> Bright Future!
+        </h1>
+        <div class="btn-group">
+          <a href="./error.html" class="primary-btn">Book Appointment</a>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+    
+    <section class="hero">
+    <div class="hero-content">
+      <span class="tag">Fintech Company Branding</span>
+      <h1>Grow Your Online Store With Experts</h1>
+      <p>Build a strong business without investing time and money into it.</p>
+      
+      <div class="cta">
+        <a href="./error.html" class="btn">Get In Touch</a>
+        <div class="phone">
+          
+          
+            <p>Phone Number</p>
+            <h4><span class="icon"><i class="fa-solid fa-phone"></i></span> +91 7891234567</h4>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/2023/04/hero-slide-2-1.jpg" alt="Business Globe">
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+     <script>
+  //  mode
+    const toggleBtn = document.getElementById("mode-toggle");
+    const body = document.body;
+
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+      if (body.classList.contains("dark-mode")) {
+        toggleBtn.textContent = "☀️"; 
+      } else {
+        toggleBtn.textContent = "🌑"; 
+      }
+    });
+  </script>
+
+    <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+    <script src="./home.js"></script>
+</body>
+</html>
