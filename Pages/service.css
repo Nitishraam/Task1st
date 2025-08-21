@@ -135,95 +135,51 @@ body.dark-mode .home-nav a {
 .dropdown-menu li a:hover {
   background: #eee;
 }
-.banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 20px;
-  /* background: linear-gradient(135deg, #0d47a1, #1976d2); */
-  /* background-color: lightblue;1 */
-  padding-top: 150px;
-  padding-left: 100px;
-  background-color: #07102e;
-}
 
-.banner-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  max-width: 1200px;
+.home-main-img {
   width: 100%;
 }
-
-
-.banner-photo img {
-  width: 480px;
-  height: 500px;
-  border-radius: 15px;
-  object-fit: contain;
-  /* background-color: #305ae0; */
-  /* box-shadow: 0 8px 20px rgba(0,0,0,0.3); */
+.home-about {
+  position: relative;
+  padding-top: 90px;
 }
-
-
-.banner-info {
-  max-width: 600px;
-}
-
-.tagline {
-  font-size: 16px;
-  color: #98a5e4;
-  margin-bottom: 10px;
-}
-
-.banner-info h1 {
-  font-size: 42px;
-  line-height: 1.3;
-  font-weight: bold;
-}
-
-.banner-info h1 span {
-  color: #4dabf7;
-}
-.banner-info h1{
+.home-about-child {
+  position: absolute;
+  top: 30%;
+  left: 5%;
   color: white;
-}
-
-.btn-group {
-  margin-top: 25px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 15px;
+  /* animation: moveRight 2s ease-in-out forwards; */
 }
-
-.primary-btn {
-  padding: 12px 25px;
-  background: #2979ff;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  transition: 0.3s;
+/* @keyframes moveRight {
+    from {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(100px);
+      opacity: 1;
+    }
+  } */
+.home-about-child-button {
+  width: 30%;
+  padding: 10px;
+  background-color: lightblue;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid lightblue;
 }
-
-.primary-btn:hover {
-  background: #1c54b2;
+.home-about-child-button:hover {
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
 }
-
-.circle-btn {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: none;
-  background: #fff;
-  color: #1976d2;
-  font-size: 22px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.circle-btn:hover {
-  background: #e3f2fd;
+.aa {
+  width: 45%;
+  padding: 10px;
+  border: 1px solid white;
 }
 .hero {
   display: flex;
@@ -308,4 +264,65 @@ body.dark-mode .home-nav a {
 .hero-image img {
   max-width: 450px;
   border-radius: 20px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-card {
+  /* background: white; */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px gainsboro;
+  width: 300px;
+  padding: 25px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 40px;
+  color: #5d5fef;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.service-card p {
+  font-size: 14px;
+  /* color: black; */
+  flex-grow: 1;
+}
+.service-card:hover {
+  background-color: rgb(121, 229, 214);
+  color: black;
+}
+.cont-btn {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #5d5fef;
+  border: 1px solid #5d5fef;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.cont-btn:hover {
+  background-color: #5d5fef;
+  color: white;
 }
