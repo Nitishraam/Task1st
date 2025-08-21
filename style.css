@@ -417,16 +417,17 @@ body.dark-mode .home-nav a {
 }
 
 .card {
-  background: #fff;
+  /* background: #fff; */
   padding: 20px;
   min-width: 220px;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 5px ghostwhite;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
+
 
 }
 
