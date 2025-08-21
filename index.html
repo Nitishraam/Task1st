@@ -353,6 +353,8 @@
   </section>
 
     <div class="slider">
+                 <h2 style="text-align: center;
+       padding-top: 10px ;font-weight: 500; padding-bottom: 15px;">Our Trusted Clients</h2>
     <div class="slide-track">
     
       <div class="slide"><h3 class="blue">BUSINESS</h3><p>commercial property</p></div>
@@ -446,45 +448,45 @@
     </footer>
 
 <!-- increment -->
-    <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const counters = document.querySelectorAll(".counter");
-    const speed = 150; 
+      <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const counters = document.querySelectorAll(".counter");
+      const speed = 150; 
 
-    const animateCounter = (counter) => {
-      const target = +counter.getAttribute("data-target");
-      const updateCount = () => {
-        const count = +counter.innerText;
-        const increment = Math.ceil(target / speed);
+      const animateCounter = (counter) => {
+        const target = +counter.getAttribute("data-target");
+        const updateCount = () => {
+          const count = +counter.innerText;
+          const increment = Math.ceil(target / speed);
 
-        if (count < target) {
-          counter.innerText = count + increment;
-          setTimeout(updateCount, 20);
-        } else {
-          counter.innerText = target;
-        }
-      };
-      updateCount();
-    };
-
-  
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            animateCounter(entry.target);
-            observer.unobserve(entry.target); 
+          if (count < target) {
+            counter.innerText = count + increment;
+            setTimeout(updateCount, 20);
+          } else {
+            counter.innerText = target;
           }
-        });
-      },
-      { threshold: 0.5 } 
-    );
+        };
+        updateCount();
+      };
 
-    counters.forEach(counter => {
-      observer.observe(counter);
+    
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              animateCounter(entry.target);
+              observer.unobserve(entry.target); 
+            }
+          });
+        },
+        { threshold: 0.5 } 
+      );
+
+      counters.forEach(counter => {
+        observer.observe(counter);
+      });
     });
-  });
-</script>
+  </script>
 
   
 
