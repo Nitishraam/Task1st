@@ -242,7 +242,7 @@ body.dark-mode .home-nav a {
   flex-direction: column;
   gap: 20px;
   align-items: center;
- box-shadow: 0  0 4px 5px ghostwhite;
+  box-shadow: 0 0 4px 5px ghostwhite;
   border-radius: 5px;
   /* justify-content: center; */
   padding: 10px 10px;
@@ -280,7 +280,7 @@ body.dark-mode .home-nav a {
   display: flex;
   align-items: center;
   gap: 20px;
-  box-shadow: 0  0 4px 10px ghostwhite;
+  box-shadow: 0 0 4px 10px ghostwhite;
   padding: 20px;
   /* flex-wrap: wrap; */
 }
@@ -323,7 +323,7 @@ body.dark-mode .home-nav a {
   /* background-color: aqua; */
   display: flex;
   /* gap: 20px; */
-   box-shadow: 0  0 4px 10px ghostwhite;
+  box-shadow: 0 0 4px 10px ghostwhite;
   /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
 }
 .offer:hover {
@@ -355,8 +355,7 @@ body.dark-mode .home-nav a {
   text-align: center;
   padding: 50px 20px;
   margin-top: 50px;
-   font-family: "Poppins", sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 
 .section-subtitle {
@@ -440,8 +439,7 @@ body.dark-mode .home-nav a {
 .updates-section {
   text-align: center;
   padding: 50px 20px;
-    font-family: "Poppins", sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 
 .sub-title {
@@ -460,7 +458,6 @@ body.dark-mode .home-nav a {
   text-align: center;
   width: 100%;
   margin-top: 10px;
-
 }
 
 .updates-container {
@@ -472,7 +469,7 @@ body.dark-mode .home-nav a {
 
 .update-card {
   /* background: #fff; */
- box-shadow: 0  0 4px 5px ghostwhite;
+  box-shadow: 0 0 4px 5px ghostwhite;
   width: 300px;
   border-radius: 8px;
   overflow: hidden;
