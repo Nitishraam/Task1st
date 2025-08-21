@@ -50,7 +50,7 @@
           <li><a href="../index.html">Home</a></li>
           <li><a href="./about.html">About Us</a></li>
           <li class="dropdown" id="serviceDropdownWrapper">
-            <a href="./error.html">Service <span id="serviceLink">▼</span> </a>
+            <a href="./service.html">Service <span id="serviceLink">▼</span> </a>
             <ul class="dropdown-menu" id="serviceDropdown">
               <li><a href="error.html">Service2</a></li>
             </ul>
@@ -244,10 +244,143 @@
   </section>
 
 
+  <section id="impact"  data-aos="fade-up" class="stats-section">
+      <div data-aos="zoom-in" class="stat-box">
+        <div class="icon2">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h2  class="counter" data-target="750">0</h2>
+        <p>SUCCESSFUL PROJECTS</p>
+      </div>
+
+      <div data-aos="zoom-in" class="stat-box">
+        <div class="icon2">
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <h2 class="counter" data-target="350">0</h2>
+        <p>MEDIA ACTIVITIES</p>
+      </div>
+
+      <div data-aos="zoom-in" class="stat-box">
+        <div class="icon2">
+          <i class="fas fa-user-tie"></i>
+        </div>
+        <h2 class="counter" data-target="150">0</h2>
+        <p>SKILLED EXPERTS</p>
+      </div>
+
+      <div data-aos="zoom-in" class="stat-box">
+        <div class="icon2">
+          <i class="fas fa-users"></i>
+        </div>
+        <h2 class="counter" data-target="125"></h2>
+        <p>HAPPY CLIENTS</p>
+      </div>
+    </section>
+
+    <section class="experts-section">
+    <h4  style="color: blue; text-align: center;">Meet Our Experts</h4>
+    <h1 style="text-align: center; padding-top: 10px; font-size: 30px;">Company Experts</h1>
+    <div class="carousel">
+      <div class="carousel-track">
+
+
+        <div class="card">
+          <img src="https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/2023/03/t-2-5.jpg" alt="Expert">
+          <h4>FOUNDER & CEO</h4>
+          <h3>Jerzzy Lamot</h3>
+          <p><i style="color: blue;" class="fa-solid fa-phone"></i>  +89(0) 1256 2156</p>
+        </div>
+
+        
+        <div class="card">
+          <img src="https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/2023/03/t-2-2.jpg" alt="Expert">
+          <h4>Co-Founder</h4>
+          <h3>Molee Marlin</h3>
+          <p><i style="color: blue;" class="fa-solid fa-phone"></i>  +89(0) 1256 2156</p>
+        </div>
+
+       
+        <div class="card">
+
+          <img src="https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/2023/03/t-2-4.jpg" alt="Expert">
+          <h4>Mannager</h4>
+          <h3>Marian Poly</h3>
+          <p><i style="color: blue;" class="fa-solid fa-phone"></i>  +89(0) 1256 2156</p>
+        </div>
+
+
+       
+        <div class="card">
+          <img src="https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/2023/03/t-2-3.jpg" alt="Expert">
+          <h4>Manager</h4>
+          <h3>Sarah James</h3>
+          <p><i style="color: blue;" class="fa-solid fa-phone"></i>  +89(0) 2156 4587</p>
+        </div>
+
+       
+        <div class="card">
+          <img src="https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/2023/03/t-2-6.jpg" alt="Expert">
+          <h4>Designer</h4>
+          <h3>Alex Brown</h3>
+          <p><i style="color: blue;" class="fa-solid fa-phone"></i>  +89(0) 7894 5623</p>
+        </div>
+
+       
+        <div class="card">
+          <img src="https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/2023/03/t-2-1.jpg" alt="Expert">
+          <h4>Developer</h4>
+          <h3>Romina Roman</h3>
+          <p><i style="color: blue;" class="fa-solid fa-phone"></i>  +89(0) 3214 8856</p>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </section>
 
 
 
+       <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+    const speed = 150; 
 
+    const animateCounter = (counter) => {
+      const target = +counter.getAttribute("data-target");
+      const updateCount = () => {
+        const count = +counter.innerText;
+        const increment = Math.ceil(target / speed);
+
+        if (count < target) {
+          counter.innerText = count + increment;
+          setTimeout(updateCount, 20);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    };
+
+  
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            observer.unobserve(entry.target); 
+          }
+        });
+      },
+      { threshold: 0.5 } 
+    );
+
+    counters.forEach(counter => {
+      observer.observe(counter);
+    });
+  });
+</script>
 
      <script>
   //  mode
