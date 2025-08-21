@@ -47,7 +47,7 @@
   /* flex-direction: column; */
   justify-content: space-around;
   align-items: center;
-  font-family: inherit;
+  /* font-family: inherit; */
 }
 .home-navlist a {
   font-size: 14px;
@@ -169,7 +169,7 @@ body.dark-mode .home-nav a {
   box-shadow: 0 0 5px 10px ghostwhite;
   margin-top: 80px;
   font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 .abt-service-child:hover {
   background-color: rgb(121, 229, 214);
@@ -194,7 +194,7 @@ body.dark-mode .home-nav a {
   padding: 50px 8%;
   gap: 40px;
   font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   margin-top: 80px;
   /* background-color: rgb(234, 235, 235); */
 }
@@ -313,7 +313,7 @@ body.dark-mode .home-nav a {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   position: relative;
 }
 .home-team h5 {
@@ -529,7 +529,7 @@ body.dark-mode .home-nav a {
   background-color: rgb(48, 128, 152);
   padding: 20px 50px;
   margin-top: 70px;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .footer-top {
