@@ -214,13 +214,14 @@ body.dark-mode .home-nav a {
 .hero-content p {
   font-size: 17px;
   color: #555;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .cta {
   display: flex;
   align-items: center;
   gap: 30px;
+  padding-top: 15px;
 }
 
 .btn {
@@ -242,6 +243,7 @@ body.dark-mode .home-nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 0 4px 5px ghostwhite;
   /* gap: 12px; */
  
 }
@@ -325,4 +327,89 @@ body.dark-mode .home-nav a {
 .cont-btn:hover {
   background-color: #5d5fef;
   color: white;
+}
+
+.agency-section {
+  width: 97%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+  margin-top: 100px;
+  padding-left: 100px;
+ 
+
+}
+
+
+.tagline {
+  color: #2d4de0;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.headline {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height:47px;
+}
+
+.description {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 25px;
+  max-width: 500px;
+  line-height: 30px;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.experience .icon {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.experience a {
+  color: #2d4de0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.features {
+  display: flex;
+  gap: 20px;
+}
+
+.feature-box {
+  /* background: #f3f6ff; */
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 0 5px 5px ghostwhite ;
+}
+
+.feature-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.feature-box h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.img-box img {
+  width: 600px;
+  height: 420px;
+  object-fit: contain;
+  border-radius: 10px;
 }
