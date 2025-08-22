@@ -481,7 +481,9 @@ body.dark-mode .home-nav a {
       flex-direction: column;
       align-items: center;
       gap: 8px;
-      background: #fff;
+      /* background: #fff; */
+     box-shadow: 0 0 4px 5px  ghostwhite;
+
     }
 
     .card img {
