@@ -307,7 +307,9 @@ body.dark-mode .home-nav a {
   flex-grow: 1;
 }
 .service-card:hover {
-  background-color: rgb(121, 229, 214);
+  /* background-color: rgb(121, 229, 214); */
+  background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+
   color: black;
 }
 .cont-btn {
