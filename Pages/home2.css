@@ -160,7 +160,7 @@ body.dark-mode .home-nav a {
     opacity: 0;
   }
   to {
-    transform: translateX(190px);
+    transform: translateX(50px);
     opacity: 1;
   }
 }
@@ -754,5 +754,14 @@ body.dark-mode .home-nav a {
   }
   .home-about-child-button2 {
     width: 60%;
+  }
+}
+@media (max-width: 390px){
+  .home-nav{
+    width: 100%;
+  }
+  .home-main-img2{
+    width: 390px;
+    height: 340px;
   }
 }
