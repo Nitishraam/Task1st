@@ -251,7 +251,8 @@ body.dark-mode .home-nav a {
   width: 20%;
 }
 .choose2:hover {
-  background-color: rgb(121, 229, 214);
+  background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+
   /* color: white; */
 }
 .choose {
@@ -314,7 +315,8 @@ body.dark-mode .home-nav a {
   height: 690px;
 }
 .solution-child:hover {
-  background-color: rgb(121, 229, 214);
+  background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+
   /* color: white; */
 }
 
@@ -327,7 +329,8 @@ body.dark-mode .home-nav a {
   /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
 }
 .offer:hover {
-  background-color: rgb(121, 229, 214);
+  background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+
   /* color: white; */
 }
 
@@ -389,7 +392,8 @@ body.dark-mode .home-nav a {
 
 .pricing-card:hover {
   transform: translateY(-5px);
-  background-color: rgb(121, 229, 214);
+  background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+
 }
 
 .plan-title {
@@ -478,7 +482,8 @@ body.dark-mode .home-nav a {
 }
 .update-card:hover {
   transform: translateY(-5px);
-  background-color: rgb(121, 229, 214);
+  background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+
 }
 
 .update-card img {

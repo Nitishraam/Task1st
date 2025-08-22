@@ -170,7 +170,8 @@ body.dark-mode .home-nav a {
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 .abt-service-child:hover {
-  background-color: rgb(121, 229, 214);
+  background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+
   /* color: white; */
 }
 .abt-service-child2 {
@@ -491,7 +492,8 @@ body.dark-mode .home-nav a {
 }
 .update-card:hover {
   transform: translateY(-5px);
-  background-color: rgb(121, 229, 214);
+   background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+
 }
 
 .update-card img {

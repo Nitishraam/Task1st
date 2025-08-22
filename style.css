@@ -589,7 +589,7 @@ body.dark-mode .home-nav a {
 .work-card:hover {
   transform: translateY(-5px);
   /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);   */
-  background-color: rgb(121, 229, 214);
+  background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
 }
 
 .work-card .number {
