@@ -687,6 +687,37 @@ body.dark-mode .home-nav a {
   .aa {
     width: 30%;
   }
+  .abt-bg-child{
+    top: 30%;
+  }
+}
+@media (max-width: 555px){
+   .abt-bg-child{
+    top: 20%;
+    font-size: 15px;
+  }
+  .abt-bg-child2{
+    gap: 25px;
+  }
+  .aa{
+    width: 40%;
+  }
+  .main-title{
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 385px){
+  .abt-bg-child h1{
+    font-size: 16px;
+  }
+  .abt-bg-child{
+    top: 20%;
+    font-size: 15px;
+    gap: 10px;
+  }
+   .aa{
+    width: 50%;
+  }
 }
 /* @media (max-width: 555px) {
   .home-about {
