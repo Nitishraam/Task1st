@@ -611,8 +611,7 @@ body.dark-mode .home-nav a {
 .footer-copy span {
   color: white;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .home-nav {
     width: 100%;
     display: flex;
@@ -659,109 +658,31 @@ body.dark-mode .home-nav a {
   .close-btn {
     display: block;
   }
-  .sol-img {
-    width: 420px;
+   .solution{
+    width: 90%;
+    flex-direction: column;
   }
-  .offer-child-main {
-    grid-template-columns: repeat(1, 1fr);
+   .offer-child-main{
+    grid-template-columns: repeat(1,1fr);
   }
+ 
 }
-@media (max-width: 555px) {
-  .home-about2 {
-    max-width: 100%;
-  }
-  .home-about-child2 {
-    width: 75%;
-  }
-  .home-main-img2 {
+@media (max-width: 600px){
+  .home-main-img2{
     height: 500px;
   }
-}
-@media (max-width: 555px) {
-  .home-about-child2 {
-    width: 70%;
-    left: 0;
+  .home-about-child2{
+    gap: 22px;
   }
-
-  .home-about-child-button2 {
-    width: 60%;
+  .solution{
+    width: 90%;
+    flex-direction: column;
   }
-  .home-main-img2 {
-    width: 640px;
-    height: 575px;
+  .sol-img{
+    width: 350px;
+    height: 500px;
   }
-
-  .choose {
-    gap: 25px;
-
-    width: 600px;
-  }
-  .pricing-section {
-    width: 600px;
-  }
-  .offer-main {
-    width: 600px;
-  }
-  .solution {
-    width: 600px;
-    flex-wrap: wrap;
-  }
-  .solution-child {
-    width: 500px;
-  }
-  .sol-img {
-    width: 500px;
-  }
-  .footer {
-    width: 635px;
-  }
-  /* .updates-section{
-      display: flex;
-      flex-wrap: wrap;
-    } */
-
-  .updates-container {
-    width: 535px;
-  }
-}
-@media (max-width: 425px) {
-  .solution {
-    width: 600px;
-  }
-  .choose {
-    width: 600px;
-  }
-  .offer-main {
-    width: 600px;
-  }
-  .pricing-section {
-    width: 600px;
-  }
-  .updates-section {
-    width: 600px;
-  }
-}
-@media (max-width: 375px) {
-  .home-about-child2 {
-    width: 60%;
-  }
-  .signin {
-    padding: 4px;
-  }
-  .home-logo img {
-    padding: 0;
-    width: 150px;
-  }
-  .home-about-child-button2 {
-    width: 60%;
-  }
-}
-@media (max-width: 390px){
-  .home-nav{
-    width: 100%;
-  }
-  .home-main-img2{
-    width: 390px;
-    height: 340px;
+  .offer-child-main{
+    grid-template-columns: repeat(1,1fr);
   }
 }

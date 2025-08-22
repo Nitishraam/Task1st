@@ -94,13 +94,18 @@ h2 {
   width: 100%;
   background: #0a74da;
   color: #fff;
-  padding: 12px;
+  text-decoration: none;
+  padding: 8px 35px;
   border: none;
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
   margin-top: 10px;
   transition: 0.3s;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .btn:hover {
