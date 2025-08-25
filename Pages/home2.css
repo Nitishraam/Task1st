@@ -668,6 +668,14 @@ body.dark-mode .home-nav a {
  
 }
 @media (max-width: 600px){
+  .home-nav{
+    gap: 0;
+    /* width: 78%; */
+  }
+  .home-logo img{
+    width: 100px;
+    padding-left: 0;
+  }
   .home-main-img2{
     height: 500px;
   }
@@ -684,5 +692,11 @@ body.dark-mode .home-nav a {
   }
   .offer-child-main{
     grid-template-columns: repeat(1,1fr);
+  }
+  .offer{
+    flex-direction: column;
+  }
+  .home-about-child2{
+    width: 285px;
   }
 }
