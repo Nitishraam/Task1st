@@ -15,7 +15,7 @@
   padding-top: 10px;
   align-items: center;
   background-color: white;
-  position: fixed;
+  position: sticky;
   z-index: 10;
   gap: 30px;
 }
@@ -141,7 +141,7 @@ body.dark-mode .home-nav a {
 }
 .home-about2 {
   position: relative;
-  padding-top: 90px;
+  /* padding-top: 90px; */
   margin-bottom: 70px;
 }
 .home-about-child2 {

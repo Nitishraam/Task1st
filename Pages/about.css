@@ -16,7 +16,8 @@
   padding-top: 10px;
   align-items: center;
   background-color: white;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 10;
   justify-content: space-around;
 }
@@ -139,7 +140,7 @@ body.dark-mode .home-nav a {
 }
 
 .abt-bg-img {
-  margin-top: 70px;
+  /* margin-top: 70px; */
   width: 100%;
   position: relative;
   /* height: 4; */
@@ -695,8 +696,8 @@ body.dark-mode .home-nav a {
 }
 @media (max-width: 555px){
    .abt-bg-child{
-    top: 20%;
-    font-size: 15px;
+    top: 13%;
+    font-size: 12px;
   }
   .abt-bg-child2{
     gap: 25px;

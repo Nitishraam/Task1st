@@ -16,7 +16,8 @@
   padding-top: 10px;
   align-items: center;
   background-color: white;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 10;
   justify-content: space-around;
 }
@@ -137,10 +138,12 @@ body.dark-mode .home-nav a {
 .abt-bg {
   overflow: hidden;
   background-color: black;
+    font-family: "Poppins", sans-serif;
+
 }
 
 .abt-bg-img{
-  margin-top: 70px;
+  /* margin-top: 70px; */
   width: 100%;
   position: relative;
   /* height: 4; */
@@ -349,12 +352,14 @@ color: transparent;
 
 .comments-container {
   max-width: 800px;
-  margin: auto;
+  /* margin: auto; */
   padding-top: 100px;
+  padding-left: 100px;
   display: flex;
   flex-direction: column;
   gap: 20px;
    font-family: "Poppins", sans-serif;
+
 }
 
 .h2 {
@@ -376,6 +381,7 @@ color: transparent;
   box-shadow: 0 1px 4px 5px ghostwhite;
   /* gap: 15px; */
 transition: transform 1s ease;
+    border: 1px solid blue;
 }
 
 
@@ -608,4 +614,3 @@ color: transparent;
 .footer-copy span {
   color: white;
 }
-    

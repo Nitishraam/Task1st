@@ -16,7 +16,8 @@
   padding-top: 10px;
   align-items: center;
   background-color: white;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 10;
   justify-content: space-around;
 }
@@ -139,7 +140,7 @@ body.dark-mode .home-nav a {
 }
 .home-about {
   position: relative;
-  padding-top: 90px;
+  /* padding-top: 90px; */
 }
 .home-about-child {
   position: absolute;
@@ -193,13 +194,15 @@ body.dark-mode .home-nav a {
 
 .tag {
   display: inline-block;
-  border: 1.5px solid #2563eb;
+  /* border: 1.5px solid #2563eb; */
   padding: 6px 16px;
   border-radius: 25px;
-  color: #2563eb;
+  color: #1b53cc;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 20px;
+     background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+
 }
 
 .hero-content h1 {
@@ -242,6 +245,8 @@ body.dark-mode .home-nav a {
   flex-direction: column;
   align-items: center;
   box-shadow: 0 0 4px 5px ghostwhite;
+     background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+border-radius: 10px;
   /* gap: 12px; */
 }
 
@@ -391,6 +396,8 @@ body.dark-mode .home-nav a {
   flex: 1;
   text-align: center;
   box-shadow: 0 0 5px 5px ghostwhite;
+     background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+
 }
 
 .feature-icon {
@@ -483,6 +490,8 @@ body.dark-mode .home-nav a {
   align-items: center;
   gap: 8px;
   /* background: #fff; */
+     background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+
   box-shadow: 0 0 4px 5px ghostwhite;
 }
 
@@ -516,6 +525,9 @@ body.dark-mode .home-nav a {
   font-weight: 700;
   margin-bottom: 40px;
   margin-top: 70px;
+   background: linear-gradient(to right,rgb(84, 136, 241),rgb(6, 63, 136));    
+background-clip: text;
+color: transparent;
 }
 
 .work-container {
