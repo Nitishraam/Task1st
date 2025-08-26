@@ -245,8 +245,8 @@ body.dark-mode .home-nav a {
   flex-direction: column;
   align-items: center;
   box-shadow: 0 0 4px 5px ghostwhite;
-     background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
-border-radius: 10px;
+  background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+  border-radius: 10px;
   /* gap: 12px; */
 }
 
@@ -872,7 +872,7 @@ color: transparent;
     max-width: 1100px;
   }
   .btn {
-    width: 30%;
+    width: 65%;
   }
 }
 @media (max-width: 600px) {
@@ -899,5 +899,8 @@ color: transparent;
   .home-logo img{
     width: 100px;
     padding-left: 0;
+  }
+  .phone{
+    width: 75%;
   }
 }
