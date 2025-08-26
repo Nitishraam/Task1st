@@ -322,21 +322,22 @@ textarea {
   transition: transform 0.2s ease;
 }
 
-/* Hover effect */
+
 .card:hover {
   transform: translateY(-5px);
     background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
 
 }
 
-/* Card headings */
 .card h2 {
   margin-bottom: 15px;
   font-size: 20px;
-  color: #0d1b2a;
+  background: linear-gradient(to right,rgb(62, 118, 230),rgb(6, 63, 136));    
+background-clip: text;
+color: transparent;
 }
 
-/* Card text */
+
 .card p {
   margin: 8px 0;
   font-size: 15px;
@@ -346,7 +347,6 @@ textarea {
   gap: 8px;
 }
 
-/* Icon style */
 .icon {
   font-size: 18px;
   color: #004aad;
