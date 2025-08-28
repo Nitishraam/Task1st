@@ -288,6 +288,9 @@ body.dark-mode .home-nav a {
   flex-direction: column;
   align-items: flex-start;
   transition: transform 0.3s ease;
+    border: 1px solid transparent; 
+
+  
 }
 
 .service-card:hover {
