@@ -56,7 +56,7 @@
 }
 .home-logo img {
   width: 200px;
-  padding-left: 50px;
+  padding-left: 10px;
 }
 
 .home-navlist a:hover {
@@ -82,8 +82,9 @@ body.dark-mode .home-nav {
 body.dark-mode .home-nav a {
   color: #f4f4f4;
 }
-.signin:hover {
+.signin:hover{
   background-color: blue;
+
   color: white;
   cursor: pointer;
 }
@@ -92,7 +93,14 @@ body.dark-mode .home-nav a {
   border: 1px solid black;
   padding: 8px;
   text-decoration: none;
-  color: black;
+  /* color: black; */
+  /* border-radius: 10px;
+   background: linear-gradient(to right,rgb(84, 136, 241),rgb(6, 63, 136));    
+background-clip: text;
+color: transparent; */
+color: #04588c;
+border-radius: 10px;
+  font-weight: 600;
 }
 .home-navlist ul {
   list-style: none;
@@ -152,6 +160,14 @@ body.dark-mode .home-nav a {
   gap: 15px;
   /* animation: moveRight 2s ease-in-out forwards; */
 }
+.home-about-child h1{
+    font-family: "Poppins", sans-serif;
+
+    background: linear-gradient(to right,rgb(84, 136, 241),rgb(6, 63, 136));    
+background-clip: text;
+color: transparent;
+}
+
 /* @keyframes moveRight {
     from {
       transform: translateX(-200px);
@@ -178,7 +194,7 @@ body.dark-mode .home-nav a {
 .aa {
   width: 45%;
   padding: 10px;
-  border: 1px solid white;
+  border: 1px solid #9ebcfa;
 }
 .hero {
   display: flex;
@@ -520,7 +536,8 @@ body.dark-mode .home-nav a {
 @keyframes scroll {
   0% {
     transform: translateX(0);
-  }
+   
+  } 
   100% {
     transform: translateX(-50%);
   }
@@ -722,9 +739,11 @@ color: transparent;
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 10px;
+  color: rgb(7, 81, 209);
 }
 .footer-box p {
   font-size: 14px;
+  color: #ccc;
 }
 .footer-box h4 {
   margin-bottom: 8px;
