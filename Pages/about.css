@@ -554,9 +554,11 @@ body.dark-mode .home-nav a {
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 10px;
+  color: rgb(7, 81, 209);
 }
 .footer-box p {
   font-size: 14px;
+  color: #ccc;
 }
 .footer-box h4 {
   margin-bottom: 8px;

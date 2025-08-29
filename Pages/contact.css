@@ -380,9 +380,11 @@ color: transparent;
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 10px;
+  color: rgb(7, 81, 209);
 }
 .footer-box p {
   font-size: 14px;
+  color: #ccc;
 }
 .footer-box h4 {
   margin-bottom: 8px;
@@ -509,5 +511,13 @@ color: transparent;
   }
   .close-btn {
     display: block;
+  }
+}
+@media (max-width: 390px) {
+  .contact-container{
+    flex-direction: column;
+  }
+  .form-row{
+    flex-direction: column;
   }
 }

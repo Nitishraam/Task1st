@@ -162,6 +162,13 @@ border-radius: 10px;
   font-family: "Poppins", sans-serif;
   /* color: rgb(121, 229, 214); */
 }
+#bb{
+    width: 25%;
+            text-align: start;
+            background-color: blue;
+            padding: 10px;
+            border-radius: 15px;
+}
 .abt-service-child {
   width: 280px;
   /* background-color: aqua; */
@@ -554,9 +561,11 @@ color: transparent;
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 10px;
+  color: rgb(7, 81, 209);
 }
 .footer-box p {
   font-size: 14px;
+  color: #ccc;
 }
 .footer-box h4 {
   margin-bottom: 8px;
@@ -683,5 +692,27 @@ color: transparent;
   }
   .close-btn {
     display: block;
+  }
+}
+@media (max-width: 390px) {
+  .abt-bg-child{
+    top: 15%;
+    font-size: 12px;
+    gap: 10px;
+  }
+  #bb{
+    width: 100%;
+  }
+  #bbb{
+    display: none;
+  }
+  .main-container{
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .comments-container{
+    padding-left: 10px;
+       padding-right: 10px;
   }
 }
