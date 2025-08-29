@@ -82,7 +82,7 @@ body.dark-mode .home-nav {
 body.dark-mode .home-nav a {
   color: #f4f4f4;
 }
-.signin:hover{
+.signin:hover {
   background-color: blue;
 
   color: white;
@@ -98,8 +98,8 @@ body.dark-mode .home-nav a {
    background: linear-gradient(to right,rgb(84, 136, 241),rgb(6, 63, 136));    
 background-clip: text;
 color: transparent; */
-color: #04588c;
-border-radius: 10px;
+  color: #04588c;
+  border-radius: 10px;
   font-weight: 600;
 }
 .home-navlist ul {
@@ -160,12 +160,12 @@ border-radius: 10px;
   gap: 15px;
   /* animation: moveRight 2s ease-in-out forwards; */
 }
-.home-about-child h1{
-    font-family: "Poppins", sans-serif;
+.home-about-child h1 {
+  font-family: "Poppins", sans-serif;
 
-    background: linear-gradient(to right,rgb(84, 136, 241),rgb(6, 63, 136));    
-background-clip: text;
-color: transparent;
+  background: linear-gradient(to right, rgb(84, 136, 241), rgb(6, 63, 136));
+  background-clip: text;
+  color: transparent;
 }
 
 /* @keyframes moveRight {
@@ -217,8 +217,7 @@ color: transparent;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 20px;
-     background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
-
+  background: linear-gradient(to right, rgb(121, 229, 214), rgb(18, 156, 138));
 }
 
 .hero-content h1 {
@@ -261,7 +260,7 @@ color: transparent;
   flex-direction: column;
   align-items: center;
   box-shadow: 0 0 4px 5px ghostwhite;
-  background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+  background: linear-gradient(to right, rgb(121, 229, 214), rgb(18, 156, 138));
   border-radius: 10px;
   /* gap: 12px; */
 }
@@ -304,9 +303,7 @@ color: transparent;
   flex-direction: column;
   align-items: flex-start;
   transition: transform 0.3s ease;
-    border: 1px solid transparent; 
-
-  
+  border: 1px solid transparent;
 }
 
 .service-card:hover {
@@ -415,8 +412,7 @@ color: transparent;
   flex: 1;
   text-align: center;
   box-shadow: 0 0 5px 5px ghostwhite;
-     background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
-
+  background: linear-gradient(to right, rgb(121, 229, 214), rgb(18, 156, 138));
 }
 
 .feature-icon {
@@ -509,13 +505,13 @@ color: transparent;
   align-items: center;
   gap: 8px;
   /* background: #fff; */
-     /* background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138)); */
+  /* background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138)); */
 
   box-shadow: 0 0 4px 5px ghostwhite;
 }
- .card:hover{
-      background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
-    }
+.card:hover {
+  background: linear-gradient(to right, rgb(121, 229, 214), rgb(18, 156, 138));
+}
 
 .card img {
   width: 120px;
@@ -536,8 +532,7 @@ color: transparent;
 @keyframes scroll {
   0% {
     transform: translateX(0);
-   
-  } 
+  }
   100% {
     transform: translateX(-50%);
   }
@@ -548,9 +543,9 @@ color: transparent;
   font-weight: 700;
   margin-bottom: 40px;
   margin-top: 70px;
-   background: linear-gradient(to right,rgb(84, 136, 241),rgb(6, 63, 136));    
-background-clip: text;
-color: transparent;
+  background: linear-gradient(to right, rgb(84, 136, 241), rgb(6, 63, 136));
+  background-clip: text;
+  color: transparent;
 }
 
 .work-container {
@@ -585,6 +580,7 @@ color: transparent;
 .work-left h3 {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  line-height: 37px;
 }
 
 .btn {
@@ -921,11 +917,11 @@ color: transparent;
     padding: 10px 20px;
     font-size: 13px;
   }
-  .home-logo img{
+  .home-logo img {
     width: 100px;
     padding-left: 0;
   }
-  .phone{
+  .phone {
     width: 75%;
   }
 }

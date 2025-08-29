@@ -92,8 +92,8 @@ body.dark-mode .home-nav a {
   border: 1px solid black;
   padding: 8px;
   text-decoration: none;
-color: #04588c;
-border-radius: 10px;
+  color: #04588c;
+  border-radius: 10px;
   font-weight: 600;
 }
 .home-navlist ul {
@@ -173,7 +173,7 @@ border-radius: 10px;
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 .abt-service-child:hover {
-  background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+  background: linear-gradient(to right, rgb(121, 229, 214), rgb(18, 156, 138));
 
   /* color: white; */
 }
@@ -495,8 +495,7 @@ border-radius: 10px;
 }
 .update-card:hover {
   transform: translateY(-5px);
-   background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
-
+  background: linear-gradient(to right, rgb(121, 229, 214), rgb(18, 156, 138));
 }
 
 .update-card img {
@@ -692,35 +691,35 @@ border-radius: 10px;
   .aa {
     width: 30%;
   }
-  .abt-bg-child{
+  .abt-bg-child {
     top: 30%;
   }
 }
-@media (max-width: 555px){
-   .abt-bg-child{
+@media (max-width: 555px) {
+  .abt-bg-child {
     top: 13%;
     font-size: 12px;
   }
-  .abt-bg-child2{
+  .abt-bg-child2 {
     gap: 25px;
   }
-  .aa{
+  .aa {
     width: 40%;
   }
-  .main-title{
+  .main-title {
     font-size: 1.2rem;
   }
 }
-@media (max-width: 385px){
-  .abt-bg-child h1{
+@media (max-width: 385px) {
+  .abt-bg-child h1 {
     font-size: 16px;
   }
-  .abt-bg-child{
+  .abt-bg-child {
     top: 20%;
     font-size: 15px;
     gap: 10px;
   }
-   .aa{
+  .aa {
     width: 50%;
   }
 }
