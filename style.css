@@ -899,6 +899,7 @@ color: transparent; */
 @media (max-width: 600px) {
   .home-main-img {
     height: 500px;
+    object-fit: cover;
   }
   .img-box img {
     width: 340px;
