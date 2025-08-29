@@ -493,10 +493,13 @@ body.dark-mode .home-nav a {
   align-items: center;
   gap: 8px;
   /* background: #fff; */
-     background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+     /* background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138)); */
 
   box-shadow: 0 0 4px 5px ghostwhite;
 }
+ .card:hover{
+      background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
+    }
 
 .card img {
   width: 120px;
