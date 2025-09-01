@@ -1,12 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stackly</title>
-    <link rel="stylesheet" href="./service2.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./service2.css" />
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="home-nav">
+      <div class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></div>
+      <div class="home-logo">
+        <img src="../images/logo-removebg-preview.png" alt="" />
+      </div>
+      <div class="home-navlist" id="sidebarMenu">
+        <span class="close-btn" id="closeBtn"
+          ><i class="fa-solid fa-xmark"></i
+        ></span>
+        <ul>
+          <!-- <li class="dropdown" id="homeDropdownWrapper">
+            <a href="./index.html">Home <span id="homeLink">▼</span></a>
+            <ul class="dropdown-menu" id="homeDropdown">
+              <li><a href="./Pages/home2.html">Home2</a></li>
+            </ul>
+          </li> -->
+          <li><a href="./home2.html">Home</a></li>
+          <li><a href="./about2.html">About Us</a></li>
+          <li class="dropdown" id="serviceDropdownWrapper">
+            <a href="./error.html">Service </a>
+          </li>
+          <li class="dropdown" id="blogDropdownWrapper">
+            <a href="./error.html">Blog </a>
+          </li>
+          <li><a href="./error.html">Contact Us</a></li>
+          <li><a href="./error.html">Dashboard</a></li>
+        </ul>
+      </div>
+
+      <button class="mode-toggle" id="mode-toggle">🌑</button>
+
+      <a class="signin" href="./error.html"
+        ><p><i class="fa-solid fa-user"></i> LOG IN</p></a
+      >
+    </nav>
+    <section class="contact-banner">
+      <div data-aos="zoom-in" class="overlay">
+        <h1>Service</h1>
+        <p class="breadcrumb">
+          <span class="home-icon">🏠</span> Home / <span>Service</span>
+        </p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div>
+        <div class="hero">
+          <img  data-aos="zoom-in"
+            src="https://itqore.themeht.com/wp-content/uploads/2025/07/service10.jpg"
+            alt="Business Meeting"
+          />
+        </div>
+        <div class="hero-text">
+          <p data-aos="fade-up">
+            Our infrastructure management approach is holistic, addressing
+            capacity monitoring, data storage, network utilization, asset
+            lifecycles, software patching, wired and wireless networking and
+            more...
+          </p>
+          <p data-aos="fade-up">
+            Leverage agile frameworks to provide a robust synopsis for high
+            level overviews. Iterative approaches to corporate strategy foster
+            collaborative thinking to further the overall value proposition.
+            Organically grow the holistic world view of disruptive innovation
+            via workplace diversity and empowerment. Capitalize on low hanging
+            fruit to identify a ballpark value added activity to beta test.
+          </p>
+        </div>
+
+        <div class="working">
+          <h2 data-aos="zoom-in">Working Challenge</h2>
+          <p  data-aos="fade-up" style="font-weight: 600;">
+            The cybersecurity field can be broken down into several different
+            sections...
+          </p>
+          <ul>  
+            <li  data-aos="fade-up"><span>✔</span> Business protection against cyberattacks and data breaches.</li>
+            <li data-aos="fade-up"><span>✔</span> Protection of data and networks.</li>
+            <li data-aos="fade-up"><span>✔</span> Improved recovery time after a breach.</li>
+            <li data-aos="fade-up"><span>✔</span> Protection for end users and endpoint devices.</li>
+            <li data-aos="fade-up"><span>✔</span> Improved confidence in the company's reputation.</li>
+          </ul>
+        </div>
+
+        <div class="benefits">
+          <h2 data-aos="zoom-in">Benefits with our service</h2>
+          <div class="benefits-grid">
+            <div class="benefit-box">
+             <div style="display: flex;justify-content: space-between;">
+                <h3  data-aos="fade-up" style="color: rgb(26, 170, 237);">01</h3>
+                 <h3 data-aos="fade-up">Flexible Solutions</h3>
+             </div>
+              <p data-aos="fade-up">
+                Proactively envisioned multimedia based expertise and
+                cross-media growth.
+              </p>
+            </div>
+            <div class="benefit-box">
+               <div style="display: flex;justify-content: space-between;">
+                <h3 data-aos="fade-up" style="color: rgb(2, 104, 151);">02</h3>
+                 <h3 data-aos="fade-up">IT Consultancy</h3>
+             </div>
+              <p data-aos="fade-up">
+                Proactively envisioned multimedia based expertise and
+                cross-media growth.
+              </p>
+            </div>
+            <div class="benefit-box">
+                <div style="display: flex;justify-content: space-between;">
+                <h3 data-aos="fade-up" style="color: rgb(2, 104, 151);">03</h3>
+                 <h3 data-aos="fade-up">Digital Marketing</h3>
+             </div>
+              <p data-aos="fade-up">
+                With over a decade of experience, we've established one of the
+                pioneering agencies.
+              </p>
+            </div>
+            <div class="benefit-box">
+               <div style="display: flex;justify-content: space-between;">
+                <h3 data-aos="fade-up" style="color: rgb(2, 104, 151);">04</h3>
+                 <h3 data-aos="fade-up">24/7 Support</h3>
+             </div>
+              <p data-aos="fade-up">
+                Collaboratively administrate empowered markets via plug-and-play
+                networks.
+              </p>
+            </div>
+          </div>
+        </div>
+
+         <div class="faq-container">
+    <h2 data-aos="zoom-in" style="color: rgb(17, 17, 208);">Questions about service</h2>
+
+    <div class="faq-item">
+      <input type="checkbox" id="q1">
+      <label  data-aos="fade-up" class="faq-question" for="q1">
+        01. How To Soft Launch Your Business?
+       <div  data-aos="fade-up" class="icon">
+        <i class="fa-solid fa-eye eye"></i>
+        <i class="fa-solid fa-eye-low-vision eye-off"></i>
+       </div>
+      </label>
+      <div class="faq-answer">
+        Leverage agile frameworks to provide a robust synopsis for high level overviews. 
+        Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. 
+        Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="q2">
+      <label data-aos="fade-up" class="faq-question" for="q2">
+        02. What Is The Transfer Application Process?
+       <div data-aos="fade-up" class="icon">
+        <i class="fa-solid fa-eye eye"></i>
+        <i class="fa-solid fa-eye-low-vision eye-off"></i>
+       </div>
+      </label>
+      <div class="faq-answer">
+        The transfer application process involves submitting your details, providing the required documents, and 
+        completing the verification steps before approval.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="q3">
+      <label data-aos="fade-up" class="faq-question" for="q3">
+        03. Where Should I Incorporate My Business?
+       <div data-aos="fade-up" class="icon">
+        <i class="fa-solid fa-eye eye"></i>
+        <i class="fa-solid fa-eye-low-vision eye-off"></i>
+       </div>
+      </label>
+      <div class="faq-answer">
+        The best place to incorporate your business depends on tax laws, business regulations, and the type of 
+        business you are running. Consult with a professional for guidance.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="q4">
+      <label data-aos="fade-up" class="faq-question" for="q4">
+        04. What Made You Look Up This Word?
+        <div data-aos="fade-up" class="icon">
+        <i class="fa-solid fa-eye eye"></i>
+        <i class="fa-solid fa-eye-low-vision eye-off"></i>
+       </div>
+      </label>
+      <div class="faq-answer">
+        Curiosity, professional needs, or personal interest could be the reason behind looking up a particular word.
+      </div>
+    </div>
+  </div>
+
+
+      </div>
+
+      <div class="sidebar">
+        <div class="services">
+          <h3 data-aos="fade-up">All Services</h3>
+          <ul>
+            <li data-aos="fade-up" class="active">IT Management</li>
+            <li data-aos="fade-up">Cyber Security</li>
+            <li data-aos="fade-up">Machine Learning</li>
+            <li data-aos="fade-up">Software Solution</li>
+            <li data-aos="fade-up">Data Analysis</li>
+            <li data-aos="fade-up">Web Development</li>
+          </ul>
+        </div>
+
+        <div class="contact">
+          <h3 data-aos="fade-up">Contact Us</h3>
+          <input data-aos="fade-up" type="text" placeholder="Your Name" />
+          <input data-aos="fade-up" type="email" placeholder="Email Address" />
+          <input data-aos="fade-up" type="text" placeholder="Phone" />
+          <select>
+            <option>Select Service</option>
+            <option>IT Management</option>
+            <option>Cyber Security</option>
+            <option>Machine Learning</option>
+            <option>Software Solution</option>
+            <option>Data Analysis</option>
+            <option>Web Development</option>
+          </select>
+          <textarea data-aos="fade-up" rows="3" placeholder="Type Your Message"></textarea>
+          <a href="./error.html"><button data-aos="fade-up">SUBMIT NOW</button></a>
+        </div>
+      </div>
+    </div>
+
+    <section id="impact"  data-aos="fade-up" class="stats-section">
+      <div data-aos="zoom-in" class="stat-box">
+        <div class="icon2">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h2  class="counter" data-target="750">0</h2>
+        <p>SUCCESSFUL PROJECTS</p>
+      </div>
+
+      <div data-aos="zoom-in" class="stat-box">
+        <div class="icon2">
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <h2 class="counter" data-target="350">0</h2>
+        <p>MEDIA ACTIVITIES</p>
+      </div>
+
+      <div data-aos="zoom-in" class="stat-box">
+        <div class="icon2">
+          <i class="fas fa-user-tie"></i>
+        </div>
+        <h2 class="counter" data-target="150">0</h2>
+        <p>SKILLED EXPERTS</p>
+      </div>
+
+      <div data-aos="zoom-in" class="stat-box">
+        <div class="icon2">
+          <i class="fas fa-users"></i>
+        </div>
+        <h2 class="counter" data-target="125"></h2>
+        <p>HAPPY CLIENTS</p>
+      </div>
+    </section>
+
     
-</body>
+     <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h5>OFFICE ADDRESS</h5>
+          <p>Chinna thirupathi,salem<br />Tamilnadu,india</p>
+        </div>
+        <div class="footer-box">
+          <i class="fas fa-clock"></i>
+          <h5>WORKING HOURS</h5>
+          <p>Weekdays 9am - 6pm</p>
+        </div>
+        <div class="footer-box">
+          <i class="fas fa-phone"></i>
+          <h5>CONTACT US</h5>
+          <p>business@stackly.com<br />+91 9123456789</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer-bottom">
+        <div class="about-us">
+          <h3>About Us</h3>
+          <p>
+            Intrinsicy evisculate emerging cutting edge scenarios redefine
+            future-proof e-markets demand line
+          </p>
+          <div class="social-icons">
+            <a href="./error.html"><i class="fab fa-facebook-f"></i></a>
+            <a href="./error.html"><i class="fab fa-twitter"></i></a>
+            <a href="./error.html"><i class="fab fa-youtube"></i></a>
+            <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
+            <a href="./error.html"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="links">
+          <h3>Links</h3>
+          <a href="./error.html">Team</a>
+          <a href="./error.html">Projects</a>
+          <a href="./error.html">Contact Us</a>
+          <a href="./error.html">Service</a>
+          <a href="./error.html">About Us</a>
+        </div>
+
+        <div class="explore">
+          <h3>Explore</h3>
+          <a href="./error.html">Team</a>
+          <a href="./error.html">Pricing Plan</a>
+          <a href="./error.html">Service</a>
+          <a href="./error.html">About Us</a>
+        </div>
+
+        <div class="office-map">
+          <h3>Office Maps</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19815.387938804116!2d-0.1246!3d51.5033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c2b73f1db5%3A0x3c42cfb7c13d59b2!2sLondon%20Eye!5e0!3m2!1sen!2suk!4v1675896498495!5m2!1sen!2suk"
+            width="250"
+            height="150"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        <p>
+          Copyright © 2025 <span>Stackly</span>. All Rights Reserved By
+          <span>Vecuro</span>.
+        </p>
+      </div>
+    </footer>
+
+
+
+      <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const counters = document.querySelectorAll(".counter");
+      const speed = 150; 
+
+      const animateCounter = (counter) => {
+        const target = +counter.getAttribute("data-target");
+        const updateCount = () => {
+          const count = +counter.innerText;
+          const increment = Math.ceil(target / speed);
+
+          if (count < target) {
+            counter.innerText = count + increment;
+            setTimeout(updateCount, 20);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCount();
+      };
+
+    
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              animateCounter(entry.target);
+              observer.unobserve(entry.target); 
+            }
+          });
+        },
+        { threshold: 0.5 } 
+      );
+
+      counters.forEach(counter => {
+        observer.observe(counter);
+      });
+    });
+  </script>
+    <script>
+      //  mode
+      const toggleBtn = document.getElementById("mode-toggle");
+      const body = document.body;
+
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        if (body.classList.contains("dark-mode")) {
+          toggleBtn.textContent = "☀️";
+        } else {
+          toggleBtn.textContent = "🌑";
+        }
+      });
+    </script>
+
+    <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+    <script src="./home.js"></script>
+  </body>
 </html>

@@ -92,7 +92,9 @@ body.dark-mode .home-nav a {
   border: 1px solid black;
   padding: 8px;
   text-decoration: none;
-  color: black;
+  color: #04588c;
+  border-radius: 10px;
+  font-weight: 600;
 }
 .home-navlist ul {
   list-style: none;

@@ -92,7 +92,9 @@ body.dark-mode .home-nav a {
   border: 1px solid black;
   padding: 8px;
   text-decoration: none;
-  color: black;
+  color: #04588c;
+  border-radius: 10px;
+  font-weight: 600;
 }
 .home-navlist ul {
   list-style: none;
@@ -255,9 +257,9 @@ body.dark-mode .home-nav a {
 
   /* color: white; */
 }
-.choose2 h4,p{
+/* .choose2 h4,p{
   color: rgb(48, 47, 47)
-}
+} */
 .choose {
   width: 95%;
 
@@ -775,5 +777,16 @@ body.dark-mode .home-nav a {
   }
   .home-about-child2{
     width: 285px;
+  }
+}
+@media (max-width: 390px){
+  .home-about-child2{
+    top: 15%;
+  }
+  .aa2{
+    color: aliceblue;
+  }
+  .home-about-child-button2{
+    width: 50%;
   }
 }
