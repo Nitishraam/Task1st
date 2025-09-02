@@ -446,6 +446,7 @@ blockquote cite {
   margin-top: 0;
   font-size: 20px;
   font-weight: bold;
+  color: black;
 }
 
 .reply-form p {
@@ -458,6 +459,7 @@ blockquote cite {
   margin-top: 9px;
   font-weight: 600;
   font-size: 14px;
+  color: black;
 }
 
 .reply-form textarea,
