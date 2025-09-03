@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./contact2.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <nav class="home-nav">
+      <div class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></div>
+      <div class="home-logo">
+        <img src="../images/logo-removebg-preview.png" alt="" />
+      </div>
+      <div class="home-navlist" id="sidebarMenu">
+        <span class="close-btn" id="closeBtn"
+          ><i class="fa-solid fa-xmark"></i
+        ></span>
+        <ul>
+          <li class="dropdown" id="homeDropdownWrapper">
+            <a href="../index.html">Home <span id="homeLink">▼</span></a>
+            <ul class="dropdown-menu" id="homeDropdown">
+               <li><a href="../index.html">Home1</a></li>
+              <li><a href="./home2.html">Home2</a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="./home2.html">Home</a></li> -->
+          <li><a href="./about2.html">About Us</a></li>
+          <li class="dropdown" id="serviceDropdownWrapper">
+            <a href="./service2.html">Service </a>
+          </li>
+          <li class="dropdown" id="blogDropdownWrapper">
+            <a href="./blog2.html">Blog </a>
+          </li>
+          <li><a href="./contact2.html">Contact Us</a></li>
+          <li><a href="./error.html">Dashboard</a></li>
+        </ul>
+      </div>
+
+      <button class="mode-toggle" id="mode-toggle">🌑</button>
+
+      <a class="signin" href="./error.html"
+        ><p><i class="fa-solid fa-user"></i> LOG IN</p></a
+      >
+    </nav>
+    
+    <section class="contact-banner">
+      <div data-aos="zoom-in" class="overlay">
+        <h1>Contact</h1>
+        <p class="breadcrumb">
+          <span class="home-icon">🏠</span> Home / <span>Contact</span>
+        </p>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+     <script>
+      //  mode
+      const toggleBtn = document.getElementById("mode-toggle");
+      const body = document.body;
+
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        if (body.classList.contains("dark-mode")) {
+          toggleBtn.textContent = "☀️";
+        } else {
+          toggleBtn.textContent = "🌑";
+        }
+      });
+    </script>
+
+    <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+    <script src="./home.js"></script>
+    
+</body>
+</html>

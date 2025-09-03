@@ -654,7 +654,7 @@ color: transparent; */
 
 .slide-track {
   display: flex;
-  width: calc(250px * 10); /* 10 clients (5 + repeated 5 for smooth loop) */
+  width: calc(250px * 10); 
   animation: scroll 20s linear infinite;
 }
 
