@@ -674,4 +674,7 @@ blockquote cite {
     .container{
         flex-direction: column;
     }
+    .content-section h2{
+      padding-left: 30px;
+    }
 }

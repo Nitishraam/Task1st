@@ -304,6 +304,8 @@ color: transparent; */
   align-items: flex-start;
   transition: transform 0.3s ease;
   border: 1px solid transparent;
+      background: linear-gradient(to right, white, rgb(182, 222, 234));
+
 }
 
 .service-card:hover {
