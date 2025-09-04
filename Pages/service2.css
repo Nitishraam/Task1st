@@ -233,6 +233,7 @@ body.dark-mode .home-nav a {
   /* background: #f1f4f9; */
   cursor: pointer;
   transition: 0.3s;
+  color: black;
 }
 
 .services li.active,
@@ -347,6 +348,7 @@ body.dark-mode .home-nav a {
 
 .benefit-box h3 {
   margin-bottom: 10px;
+  color: black;
 }
 
 .benefit-box p {

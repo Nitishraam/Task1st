@@ -294,6 +294,7 @@ color: transparent; */
 
 .service-card {
   /* background: white; */
+  color: black;
   border-radius: 10px;
   box-shadow: 0 4px 15px gainsboro;
   width: 300px;

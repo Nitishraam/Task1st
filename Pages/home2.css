@@ -257,9 +257,13 @@ body.dark-mode .home-nav a {
 
   /* color: white; */
 }
-/* .choose2 h4,p{
-  color: rgb(48, 47, 47)
-} */
+
+.choose2 h4,p{
+  color: black;
+}
+.offer-child p{
+  color: white;
+}
 .choose {
   width: 95%;
 
