@@ -163,7 +163,7 @@ color: transparent; */
 .home-about-child h1 {
   font-family: "Poppins", sans-serif;
 
-  background: linear-gradient(to right, rgb(84, 136, 241), rgb(6, 63, 136));
+  background: linear-gradient(to right, rgb(84, 136, 241), rgb(39, 116, 216));
   background-clip: text;
   color: transparent;
 }
