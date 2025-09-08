@@ -907,7 +907,7 @@ border-radius: 10px;
 }
 @media (max-width: 390px){
   .banner{
-    padding-left: 70px;
+    padding-left: 60px;
   }
   .banner-info h1{
     font-size: 37px;
@@ -915,8 +915,11 @@ border-radius: 10px;
   .home-cont1{
     width: 95%;
     padding-left: 25px;
+    padding-top: 85px;
   }
-  
+  .banner-wrapper{
+    gap: 1px;
+  }
 }
 
 

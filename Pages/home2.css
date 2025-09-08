@@ -261,9 +261,10 @@ body.dark-mode .home-nav a {
 /* .choose2 h4,p{
   color: black;
 } */
-.offer-child p{
-  color: white;
-}
+.offer-child p {
+    color: black;
+    
+  }
 .choose {
   width: 95%;
   display: flex;
@@ -338,6 +339,8 @@ body.dark-mode .home-nav a {
   display: flex;
   /* gap: 20px; */
   box-shadow: 0 0 4px 10px ghostwhite;
+  /* background: linear-gradient(to right, white, rgb(182, 222, 234)); */
+
   /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
 }
 .offer:hover {
@@ -351,7 +354,9 @@ body.dark-mode .home-nav a {
   flex-wrap: wrap;
   padding: 10px;
 }
-
+  .offer-child p {
+    color: rgb(78, 78, 78);
+  }
 .offer-child-main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -789,11 +794,20 @@ body.dark-mode .home-nav a {
 @media (max-width: 390px){
   .home-about-child2{
     top: 15%;
+    width: 300px;
+    left: 0;
   }
   .aa2{
     color: aliceblue;
+    width: 95%;
   }
   .home-about-child-button2{
     width: 50%;
+  }
+  .choose{
+    gap: 20px;
+  }
+  .offer-child p {
+    color: rgb(78, 78, 78);
   }
 }
