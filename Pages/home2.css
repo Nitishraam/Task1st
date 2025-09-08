@@ -266,7 +266,6 @@ body.dark-mode .home-nav a {
 }
 .choose {
   width: 95%;
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;

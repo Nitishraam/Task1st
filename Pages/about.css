@@ -709,12 +709,17 @@ body.dark-mode .home-nav a {
   }
   .abt-bg-child2 {
     gap: 25px;
+    width: 100%;
   }
   .aa {
     width: 40%;
   }
   .main-title {
     font-size: 1.2rem;
+  }
+  .contact-info
+  {
+    gap: 22px;
   }
 }
 @media (max-width: 385px) {
