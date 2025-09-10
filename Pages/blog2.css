@@ -144,9 +144,8 @@ body.dark-mode .home-nav a {
   align-items: center;
   justify-content: flex-start;
   color: #fff;
-  background:
-    url("https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/layerslider/projects/Techbiz-Slider-4/hero-4-1.jpg")
-      no-repeat center center/cover;
+  background: url("https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/layerslider/projects/Techbiz-Slider-4/hero-4-1.jpg")
+    no-repeat center center/cover;
   border-radius: 15px;
   overflow: hidden;
   padding-left: 80px;
@@ -188,7 +187,6 @@ body.dark-mode .home-nav a {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
 }
 
 .post-img {
@@ -241,7 +239,7 @@ blockquote cite {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 0 4px 3px ghostwhite;
-    background: linear-gradient(to right, white, rgb(182, 222, 234));
+  background: linear-gradient(to right, white, rgb(182, 222, 234));
 }
 
 .sidebar h3 {
@@ -249,13 +247,12 @@ blockquote cite {
   font-size: 18px;
   color: black;
 }
-#search{
+#search {
   width: 100%;
   font-size: 24px;
   color: blue;
-  background-color: white ;
-  padding: 10px;  /* text-align: center; */
-
+  background-color: white;
+  padding: 10px; /* text-align: center; */
 }
 .sidebar .search {
   display: flex;
@@ -282,30 +279,26 @@ blockquote cite {
 
 .sidebar ul {
   list-style: none;
-  
 }
 
 .sidebar ul li {
   margin-bottom: 10px;
-  
 }
 
 .sidebar ul li a {
   /* color: #333; */
   text-decoration: none;
   font-size: 14px;
- color: black;
-  
+  color: black;
 }
-
 
 .sidebar ul li a span {
   display: block;
   font-size: 12px;
   /* color: #777; */
 }
-.sidebar a:hover{
-    color: blue;
+.sidebar a:hover {
+  color: blue;
 }
 .tags {
   display: flex;
@@ -329,7 +322,7 @@ blockquote cite {
 }
 
 .content-section {
-  width:100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -343,7 +336,7 @@ blockquote cite {
   /* color: #111827; */
   background: linear-gradient(to right, rgb(84, 136, 241), rgb(6, 63, 136));
   background-clip: text;
-  color: transparent; 
+  color: transparent;
 }
 
 .content-section p {
@@ -355,7 +348,7 @@ blockquote cite {
 }
 
 .image-container {
-    width: 100%;
+  width: 100%;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -388,8 +381,7 @@ blockquote cite {
   border-radius: 12px;
   padding: 15px 20px;
   margin-bottom: 20px;
-     background: linear-gradient(to right, white, rgb(182, 222, 234));
-
+  background: linear-gradient(to right, white, rgb(182, 222, 234));
 }
 
 .comment-header {
@@ -446,7 +438,6 @@ blockquote cite {
   padding: 80px;
   margin-top: 30px;
   background: linear-gradient(to right, white, rgb(182, 222, 234));
-
 }
 
 .reply-form h3 {
@@ -496,7 +487,7 @@ blockquote cite {
 }
 
 .checkbox input {
-    width: 2%;
+  width: 2%;
   margin-right: 10px;
 }
 
@@ -516,7 +507,7 @@ blockquote cite {
   background: #1e40af;
 }
 .footer {
-  background-color: rgb(8 24 43);   
+  background-color: rgb(8 24 43);
   padding: 20px 50px;
   margin-top: 70px;
   /* font-family: Arial, Helvetica, sans-serif; */
@@ -565,12 +556,11 @@ blockquote cite {
   margin: 10px;
 }
 .footer-box h5 {
-     color:rgb(13, 197, 203);
-     
+  color: rgb(13, 197, 203);
 }
 .footer-bottom h3 {
   margin-bottom: 10px;
-  color:rgb(13, 197, 203)
+  color: rgb(13, 197, 203);
 }
 .footer-bottom p {
   color: #ccc;
@@ -662,26 +652,25 @@ blockquote cite {
   .close-btn {
     display: block;
   }
-   .solution{
+  .solution {
     width: 90%;
     flex-direction: column;
   }
-   .offer-child-main{
-    grid-template-columns: repeat(1,1fr);
+  .offer-child-main {
+    grid-template-columns: repeat(1, 1fr);
   }
- 
 }
-@media (max-width: 600px){
-  .home-nav{
+@media (max-width: 600px) {
+  .home-nav {
     gap: 0;
     /* width: 78%; */
   }
 }
-@media (max-width: 430px){
-    .container{
-        flex-direction: column;
-    }
-    .content-section h2{
-      padding-left: 30px;
-    }
+@media (max-width: 430px) {
+  .container {
+    flex-direction: column;
+  }
+  .content-section h2 {
+    padding-left: 30px;
+  }
 }

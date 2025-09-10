@@ -20,12 +20,11 @@ body {
   border-radius: 10px;
 }
 
-
 .login-box {
   background: #fff;
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
 .brand {

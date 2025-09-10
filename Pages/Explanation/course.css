@@ -92,8 +92,8 @@ body.dark-mode .home-nav a {
   border: 1px solid black;
   padding: 8px;
   text-decoration: none;
-color: #04588c;
-border-radius: 10px;
+  color: #04588c;
+  border-radius: 10px;
   font-weight: 600;
 }
 .home-navlist ul {
@@ -142,14 +142,12 @@ border-radius: 10px;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 0 4px 5px ghostwhite;
- /* background: linear-gradient(to right,rgb(248, 241, 241)),rgb(248, 246, 246); */
+  /* background: linear-gradient(to right,rgb(248, 241, 241)),rgb(248, 246, 246); */
   width: 80%;
   margin: auto;
- 
 }
-.blog-card:hover{
-      background: linear-gradient(to right,rgb(121, 229, 214),rgb(18, 156, 138));
-
+.blog-card:hover {
+  background: linear-gradient(to right, rgb(121, 229, 214), rgb(18, 156, 138));
 }
 
 .blog-image {
@@ -164,7 +162,6 @@ border-radius: 10px;
   height: 100%;
   object-fit: cover;
 }
-
 
 .post-meta {
   display: flex;
@@ -182,7 +179,6 @@ border-radius: 10px;
   color: #444;
 }
 
-
 .blog-content {
   padding: 20px;
 }
@@ -190,9 +186,9 @@ border-radius: 10px;
 .blog-content h2 {
   margin: 0 0 10px;
   font-size: 20px;
-  background: linear-gradient(to right,rgb(84, 136, 241),rgb(8, 68, 147));    
-background-clip: text;
-color: transparent;
+  background: linear-gradient(to right, rgb(84, 136, 241), rgb(8, 68, 147));
+  background-clip: text;
+  color: transparent;
   /* color: #111;   */
 }
 

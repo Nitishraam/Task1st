@@ -16,28 +16,24 @@ function setupDropdown(linkId, menuId, wrapperId) {
   }
 
   if (isMobile()) {
- 
     link.addEventListener("click", function (e) {
       e.preventDefault();
 
- 
-      document.querySelectorAll(".dropdown-menu").forEach(drop => {
+      document.querySelectorAll(".dropdown-menu").forEach((drop) => {
         if (drop !== menu) drop.style.display = "none";
       });
 
-      
-      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
     });
 
-   
     document.addEventListener("click", function (e) {
       if (!e.target.closest(".dropdown") && !e.target.closest(".menu-btn")) {
-        document.querySelectorAll(".dropdown-menu").forEach(m => m.style.display = "none");
+        document
+          .querySelectorAll(".dropdown-menu")
+          .forEach((m) => (m.style.display = "none"));
       }
     });
-
   } else {
-    
     link.addEventListener("click", function (e) {
       e.preventDefault();
       menu.style.display = "block";
@@ -49,9 +45,8 @@ function setupDropdown(linkId, menuId, wrapperId) {
   }
 }
 
-
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".dropdown-menu").forEach(menu => {
+  document.querySelectorAll(".dropdown-menu").forEach((menu) => {
     menu.style.display = "none";
   });
 
