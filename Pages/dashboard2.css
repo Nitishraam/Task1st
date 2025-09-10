@@ -165,7 +165,7 @@ body.dark-mode .home-nav a {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(to right, white, rgb(182, 222, 234));
+  background: linear-gradient(to right, white, rgb(96, 190, 219));
   transition: transform 0.3s;
 }
 .card:hover {
