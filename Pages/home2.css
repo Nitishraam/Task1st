@@ -791,7 +791,7 @@ body.dark-mode .home-nav a {
     width: 285px;
   }
 }
-@media (max-width: 390px){
+@media (max-width: 430px){
   .home-about-child2{
     top: 15%;
     width: 300px;

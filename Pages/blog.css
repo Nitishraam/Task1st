@@ -699,7 +699,7 @@ color: transparent;
     display: block;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 430px) {
   .abt-bg-child{
     top: 15%;
     font-size: 12px;

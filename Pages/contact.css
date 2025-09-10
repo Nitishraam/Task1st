@@ -517,7 +517,7 @@ color: transparent;
     display: block;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 430px) {
   .contact-container{
     flex-direction: column;
   }
