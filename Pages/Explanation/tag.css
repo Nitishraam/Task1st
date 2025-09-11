@@ -218,9 +218,9 @@ p {
     top: 0;
     left: -250px;
     width: 250px;
-    height: 50%;
+    height:100%;
+        display: block;
     background-color: white;
-    flex-direction: column;
     padding-top: 80px;
     transition: left 0.3s ease;
     z-index: 999;

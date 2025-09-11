@@ -849,15 +849,19 @@ color: transparent; */
   }
   .home-navlist {
     position: fixed;
+    display: block;
     top: 0;
     left: -250px;
     width: 250px;
-    height: 50%;
+    height: 100%;
     background-color: white;
-    flex-direction: column;
+    /* flex-direction: column; */
     padding-top: 80px;
     transition: left 0.3s ease;
     z-index: 999;
+   /* display: flex; */
+
+
   }
 
   .home-navlist ul {
