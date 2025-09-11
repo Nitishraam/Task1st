@@ -575,7 +575,7 @@ input[type="checkbox"]:checked + label .icon .eye-off {
     top: 0;
     left: -250px;
     width: 250px;
-    height: 100%;
+    height: 75%;
     background-color: white;
     flex-direction: column;
     padding-top: 80px;
