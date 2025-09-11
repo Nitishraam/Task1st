@@ -655,7 +655,7 @@ body.dark-mode .home-nav a {
     top: 0;
     left: -250px;
     width: 250px;
-    height: 75%;
+    height: 50%;
     background-color: white;
     flex-direction: column;
     padding-top: 80px;
