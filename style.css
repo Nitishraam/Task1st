@@ -52,7 +52,7 @@
   font-size: 14px;
   text-decoration: none;
   color: black;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .home-logo img {
   width: 200px;
@@ -112,7 +112,8 @@ color: transparent; */
 
 .home-navlist a {
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+   font-style: oblique;
   color: black;
   padding: 8px 12px;
 }
@@ -330,7 +331,7 @@ color: transparent; */
 }
 .service-card:hover {
   /* background-color: rgb(121, 229, 214); */
-  background: linear-gradient(to right, rgb(121, 229, 214), rgb(18, 156, 138));
+  background: rgb(85, 189, 230);
 
   color: black;
 }

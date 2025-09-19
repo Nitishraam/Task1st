@@ -52,7 +52,7 @@
   font-size: 14px;
   text-decoration: none;
   color: black;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .home-logo img {
   width: 200px;
@@ -106,7 +106,8 @@ body.dark-mode .home-nav a {
 
 .home-navlist a {
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+   font-style: oblique;
   color: black;
   padding: 8px 12px;
 }
