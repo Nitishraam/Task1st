@@ -937,3 +937,15 @@ color: transparent; */
     width: 75%;
   }
 }
+/* Remove mobile side gap */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
