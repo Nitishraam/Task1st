@@ -34,7 +34,7 @@
     <nav class="home-nav">
       <div class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></div>
       <div class="home-logo">
-        <img src="../images/logo-removebg-preview.png" alt="" />
+        <img src="../images/logo-removebg-preview.webp" alt="" />
       </div>
       <div class="home-navlist" id="sidebarMenu">
         <span class="close-btn" id="closeBtn"
@@ -42,7 +42,7 @@
         ></span>
         <ul>
           <li class="dropdown" id="homeDropdownWrapper">
-            <a style="position: relative;" href="../index.html">Home</a> <span style="position: absolute;left: 25px;top: 15px; cursor: pointer;" id="homeLink">▼</span>
+            <a style="position: relative;" href="./home2.html">Home <span  id="homeLink">▼</span></a> 
             <ul class="dropdown-menu" id="homeDropdown">
               <li><a href="../index.html">Home1</a></li>
               <!-- <li><a href="./home2.html">Home2</a></li> -->
@@ -81,7 +81,7 @@
         <div class="hero">
           <img
             data-aos="zoom-in"
-            src="https://itqore.themeht.com/wp-content/uploads/2025/07/service10.jpg"
+            src="../images/home1stimage_50.webp"
             alt="Business Meeting"
           />
         </div>
@@ -259,29 +259,30 @@
           </ul>
         </div>
 
-        <div class="contact">
-          <h3 data-aos="fade-up">Contact Us</h3>
-          <input data-aos="fade-up" type="text" placeholder="Your Name" />
-          <input data-aos="fade-up" type="email" placeholder="Email Address" />
-          <input data-aos="fade-up" type="text" placeholder="Phone" />
-          <select>
-            <option>Select Service</option>
-            <option>IT Management</option>
-            <option>Cyber Security</option>
-            <option>Machine Learning</option>
-            <option>Software Solution</option>
-            <option>Data Analysis</option>
-            <option>Web Development</option>
-          </select>
-          <textarea
-            data-aos="fade-up"
-            rows="3"
-            placeholder="Type Your Message"
-          ></textarea>
-          <a href="./error.html"
-            ><button data-aos="fade-up">SUBMIT NOW</button></a
-          >
-        </div>
+      <div class="contact">
+  <h3 data-aos="fade-up">Contact Us</h3>
+
+  <form action="./error.html" method="get">
+    <input data-aos="fade-up" type="text" placeholder="Your Name" required />
+    <input data-aos="fade-up" type="email" placeholder="Email Address" required />
+    <input data-aos="fade-up" type="text" placeholder="Phone" required />
+
+    <select data-aos="fade-up" required>
+      <option value="">Select Service</option>
+      <option>IT Management</option>
+      <option>Cyber Security</option>
+      <option>Machine Learning</option>
+      <option>Software Solution</option>
+      <option>Data Analysis</option>
+      <option>Web Development</option>
+    </select>
+
+    <textarea data-aos="fade-up" rows="3" placeholder="Type Your Message" required></textarea>
+
+    <button data-aos="fade-up" type="submit">SUBMIT NOW</button>
+  </form>
+</div>
+
       </div>
     </div>
 

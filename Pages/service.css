@@ -16,7 +16,7 @@
   padding-top: 10px;
   align-items: center;
   background-color: white;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
   justify-content: space-around;
@@ -368,7 +368,7 @@ body.dark-mode .home-nav a {
   flex-wrap: wrap;
   padding: 60px 20px;
   /* background: rgba(0, 0, 50, 0.6); */
-  background-image: url("../images/counter-bg-1-1.jpg");
+  background-image: url("../images/a4.webp");
   margin-top: 30px;
 }
 
@@ -798,6 +798,9 @@ body.dark-mode .home-nav a {
 @media (max-width: 665px) {
   .banner-photo img {
     width: 500px;
+  }
+  .home-cont1{
+    padding-left: 0px;
   }
 }
 

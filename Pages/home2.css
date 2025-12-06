@@ -16,7 +16,7 @@
   padding-top: 10px;
   align-items: center;
   background-color: white;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
   justify-content: space-around;
@@ -785,6 +785,9 @@ body.dark-mode .home-nav a {
   }
   .home-about-child2 {
     width: 285px;
+  }
+  .solution-main{
+    align-items: center;
   }
 }
 @media (max-width: 430px) {

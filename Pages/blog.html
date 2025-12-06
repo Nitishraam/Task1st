@@ -33,7 +33,7 @@
     <nav class="home-nav">
       <div class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></div>
       <div class="home-logo">
-        <img src="../images/logo-removebg-preview.png" alt="" />
+        <img src="../images/logo-removebg-preview.webp" alt="" />
       </div>
       <div class="home-navlist" id="sidebarMenu">
         <span class="close-btn" id="closeBtn"
@@ -41,7 +41,7 @@
         ></span>
         <ul>
           <li class="dropdown" id="homeDropdownWrapper">
-            <a style="position: relative;" href="../index.html">Home</a> <span style="position: absolute;left: 25px;top: 15px;cursor: pointer;" id="homeLink">▼</span>
+            <a style="position: relative;" href="../index.html">Home <span  id="homeLink">▼</span></a>
             <ul class="dropdown-menu" id="homeDropdown">
               <!-- <li><a href="../index.html">Home1</a></li> -->
               <li><a href="./home2.html">Home2</a></li>
@@ -71,7 +71,7 @@
     <div class="abt-bg">
       <img
         class="abt-bg-img"
-        src="https://itqore.themeht.com/wp-content/uploads/2025/07/17.jpg"
+        src="../images/17_27.webp"
         alt=""
       />
       <div data-aos="zoom-in" class="abt-bg-child">
@@ -94,7 +94,7 @@
           <div class="blog-image">
             <img
               data-aos="zoom-out"
-              src="https://itqore.themeht.com/wp-content/uploads/2025/03/03.jpg"
+              src="../images/03_1_25.webp"
               alt="Cyber Security"
             />
           </div>
@@ -130,7 +130,7 @@
           <div class="blog-image">
             <img
               data-aos="zoom-out"
-              src="https://itqore.themeht.com/wp-content/uploads/2025/03/14.jpg"
+              src="../images/14_24.webp"
               alt="Machine Learning"
             />
           </div>
@@ -164,7 +164,7 @@
           <div class="blog-image">
             <img
               data-aos="zoom-out"
-              src="https://itqore.themeht.com/wp-content/uploads/2025/03/04.jpg"
+              src="../images/04_1_24.webp"
               alt="Technology"
             />
           </div>
@@ -198,7 +198,7 @@
           <div class="blog-image">
             <img
               data-aos="zoom-out"
-              src="https://itqore.themeht.com/wp-content/uploads/2025/03/10.jpg"
+              src="../images/10_24.webp"
               alt="Data Science"
             />
           </div>
@@ -408,33 +408,33 @@
           Your email address will not be published. Required fields are marked *
         </p>
 
-        <form>
-          <label data-aos="fade-up">Comment *</label>
-          <textarea></textarea>
+    <form action="./error.html" method="get">
+  <label>Comment *</label>
+  <textarea required></textarea>
 
-          <div class="input-row">
-            <div data-aos="fade-up" class="input-group">
-              <label>Name *</label>
-              <input type="text" />
-            </div>
-            <div data-aos="fade-up" class="input-group">
-              <label>Email *</label>
-              <input type="email" />
-            </div>
-          </div>
+  <div class="input-row">
+    <div class="input-group">
+      <label>Name *</label>
+      <input type="text" required />
+    </div>
 
-          <label data-aos="fade-up">Website</label>
-          <input data-aos="fade-up" type="url" />
+    <div class="input-group">
+      <label>Email *</label>
+      <input type="email" required />
+    </div>
+  </div>
 
-          <div data-aos="fade-up" class="checkbox">
-            <input type="checkbox" /> Save my name, email, and website in this
-            browser for the next time I comment.
-          </div>
+  <label>Website</label>
+  <input type="url" required/>
 
-          <a data-aos="fade-up" href="./error.html" class="post-btn"
-            >Post Comment</a
-          >
-        </form>
+  <div class="checkbox">
+    <input type="checkbox" required />
+    Save my name, email, and website in this browser for the next time I comment.
+  </div>
+
+  <button type="submit" class="post-btn">Post Comment</button>
+</form>
+
       </div>
     </div>
 

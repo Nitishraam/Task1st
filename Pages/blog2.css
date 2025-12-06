@@ -15,7 +15,7 @@
   padding-top: 10px;
   align-items: center;
   background-color: white;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
   justify-content: space-around;
@@ -145,7 +145,7 @@ body.dark-mode .home-nav a {
   align-items: center;
   justify-content: flex-start;
   color: #fff;
-  background: url("https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/layerslider/projects/Techbiz-Slider-4/hero-4-1.jpg")
+  background: url("../images/top3.webp")
     no-repeat center center/cover;
   border-radius: 15px;
   overflow: hidden;

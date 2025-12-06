@@ -15,7 +15,7 @@
   padding-top: 10px;
   align-items: center;
   background-color: white;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
   justify-content: space-around;
@@ -150,7 +150,7 @@ body.dark-mode .home-nav a {
       rgba(0, 0, 0, 0.85) 40%,
       rgba(201, 199, 199, 0.4) 70%
     ),
-    url("https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/layerslider/projects/Bizino-Slider-2/hero-slide-3-1.jpg")
+    url("../images/hero-2-1_1_34.webp")
       no-repeat center center/cover;
   border-radius: 15px;
   overflow: hidden;
@@ -430,7 +430,7 @@ input[type="checkbox"]:checked + label .icon .eye-off {
   flex-wrap: wrap;
   padding: 60px 20px;
   /* background: rgba(0, 0, 50, 0.6); */
-  background-image: url("../images/counter-bg-1-1.jpg");
+  background-image: url("../images/a4.webp");
   margin-top: 30px;
 }
 

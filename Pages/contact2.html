@@ -33,7 +33,7 @@
     <nav class="home-nav">
       <div class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></div>
       <div class="home-logo">
-        <img src="../images/logo-removebg-preview.png" alt="" />
+        <img src="../images/logo-removebg-preview.webp" alt="" />
       </div>
       <div class="home-navlist" id="sidebarMenu">
         <span class="close-btn" id="closeBtn"
@@ -41,7 +41,7 @@
         ></span>
         <ul>
           <li class="dropdown" id="homeDropdownWrapper">
-            <a style="position: relative;" href="../index.html">Home</a> <span style="position: absolute;left: 25px;top: 15px;cursor: pointer;" id="homeLink">▼</span>
+            <a style="position: relative;" href="./home2.html">Home <span id="homeLink">▼</span></a> 
             <ul class="dropdown-menu" id="homeDropdown">
               <li><a href="../index.html">Home1</a></li>
               <!-- <li><a href="./home2.html">Home2</a></li> -->
@@ -107,26 +107,25 @@
         <h2 data-aos="fade-up">Send a Message</h2>
         <p data-aos="fade-up">We're Ready To Help You</p>
 
-        <form>
-          <input data-aos="fade-up" type="text" placeholder="Enter Full Name" />
-          <input data-aos="fade-up" type="email" placeholder="Email Address" />
+    <form action="./error.html" method="get">
+  <input data-aos="fade-up" type="text" placeholder="Enter Full Name" required />
+  <input data-aos="fade-up" type="email" placeholder="Email Address" required />
 
-          <select data-aos="fade-up">
-            <option>Select</option>
-            <option>Web Development</option>
-            <option>Mobile App</option>
-            <option>UI/UX Design</option>
-            <option>SEO & Marketing</option>
-          </select>
+  <select data-aos="fade-up" required>
+    <option value="">Select</option>
+    <option>Web Development</option>
+    <option>Mobile App</option>
+    <option>UI/UX Design</option>
+    <option>SEO & Marketing</option>
+  </select>
 
-          <textarea
-            data-aos="fade-up"
-            rows="5"
-            placeholder="Type Your Message"
-          ></textarea>
+  <textarea data-aos="fade-up" rows="5" placeholder="Type Your Message" required></textarea>
 
-          <a data-aos="fade-up" href="./error.html">SEND A MESSAGE →</a>
-        </form>
+  <button data-aos="fade-up" type="submit" class="send-btn">
+    SEND A MESSAGE →
+  </button>
+</form>
+
       </div>
     </div>
 

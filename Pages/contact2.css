@@ -15,7 +15,7 @@
   padding-top: 10px;
   align-items: center;
   background-color: white;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
   justify-content: space-around;
@@ -144,7 +144,7 @@ font-weight: 600;
   align-items: center;
   justify-content: flex-start;
   color: #fff;
-  background: url("https://consulting.stylemixthemes.com/lyon/wp-content/uploads/sites/40/2019/08/bg2.jpg?id=5755")
+  background: url("../images/in1.webp")
     no-repeat center center/cover;
   border-radius: 15px;
   overflow: hidden;
@@ -227,7 +227,7 @@ font-weight: 600;
   font-size: 14px;
 }
 
-.contact-form a {
+.contact-form button {
   padding: 12px;
   border: none;
   border-radius: 6px;
@@ -241,7 +241,7 @@ font-weight: 600;
   text-align: center;
 }
 
-.contact-form a:hover {
+.contact-form button:hover {
   background: #1e4fc9;
 }
 

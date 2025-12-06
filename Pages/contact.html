@@ -33,7 +33,7 @@
     <nav class="home-nav">
       <div class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></div>
       <div class="home-logo">
-        <img src="../images/logo-removebg-preview.png" alt="" />
+        <img src="../images/logo-removebg-preview.webp" alt="" />
       </div>
       <div class="home-navlist" id="sidebarMenu">
         <span class="close-btn" id="closeBtn"
@@ -41,7 +41,7 @@
         ></span>
         <ul>
           <li class="dropdown" id="homeDropdownWrapper">
-            <a style="position: relative;" href="../index.html">Home</a> <span style="position: absolute;left: 25px;top: 15px;cursor: pointer;" id="homeLink">▼</span>
+            <a style="position: relative;" href="../index.html">Home <span id="homeLink">▼</span></a> 
             <ul class="dropdown-menu" id="homeDropdown">
               <!-- <li><a href="../index.html">Home1</a></li> -->
               <li><a href="./home2.html">Home2</a></li>
@@ -82,7 +82,7 @@
         <div class="contact-image">
           <img
             data-aos="zoom-in"
-            src="https://itqore.themeht.com/wp-content/uploads/2025/03/05-800x800.jpg"
+            src="../images/05-800x800.webp"
             alt="Contact Person"
           />
         </div>
@@ -91,31 +91,27 @@
           <button data-aos="fade-up" class="tag-btn">GET IN TOUCH</button>
           <h2 data-aos="fade-up">Feel free to write</h2>
 
-          <form>
-            <div data-aos="fade-up" class="form-row">
-              <input type="text" placeholder="Your Name" />
-              <input type="email" placeholder="Email Address" />
-            </div>
+        <form action="./error.html" method="get">
+  <div class="form-row">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Email Address" required />
+  </div>
 
-            <div data-aos="fade-up" class="form-row">
-              <input type="text" placeholder="Phone" />
-              <select>
-                <option value="">Select Service</option>
-                <option value="web">Web Development</option>
-                <option value="app">App Development</option>
-                <option value="design">UI/UX Design</option>
-              </select>
-            </div>
+  <div class="form-row">
+    <input type="text" placeholder="Phone" required />
+    <select required>
+      <option value="">Select Service</option>
+      <option value="web">Web Development</option>
+      <option value="app">App Development</option>
+      <option value="design">UI/UX Design</option>
+    </select>
+  </div>
 
-            <textarea
-              data-aos="fade-up"
-              placeholder="Type Your Message"
-            ></textarea>
+  <textarea placeholder="Type Your Message" required></textarea>
 
-            <a data-aos="fade-up" href="./error.html" class="send-btn"
-              >SEND MESSAGE</a
-            >
-          </form>
+  <button type="submit" class="send-btn">SEND MESSAGE</button>
+</form>
+
         </div>
       </div>
     </section>
