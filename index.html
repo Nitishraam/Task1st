@@ -30,12 +30,17 @@
       href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   </head>
-  <body>
-    <nav class="home-nav">
+ <body>
+ 
+    <!-- Navbar with Dropdown -->
+ <nav class="home-nav">
       <div class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></div>
       <div class="home-logo">
-        <img src="./images/logo-removebg-preview.webp" alt="" />
+        <img src="../images/logo-removebg-preview.webp" alt="" />
       </div>
       <div class="home-navlist" id="sidebarMenu">
         <span class="close-btn" id="closeBtn"
@@ -43,19 +48,22 @@
         ></span>
         <ul>
           <li class="dropdown" id="homeDropdownWrapper">
-            <a style="position: relative;" href="./index.html">Home<span id="homeLink">▼</span></a> 
+            <a style="position: relative;" href="./index.html">Home <span id="homeLink">▼</span></a>
             <ul class="dropdown-menu" id="homeDropdown">
-              <!-- <li><a href="../index.html">Home1</a></li> -->
+               <!-- <li><a href="../index.html">Home1</a></li> -->
               <li><a href="./Pages/home2.html">Home2</a></li>
             </ul>
           </li>
-          <!-- <li><a href="./Pages/home2.html">Home</a></li> -->
+
+          <!-- <li><a href="../index.html">Home</a></li> -->
           <li><a href="./Pages/about.html">About Us</a></li>
           <li class="dropdown" id="serviceDropdownWrapper">
-            <a href="./Pages/service.html">Service </a>
+            <a href="./Pages/service.html"
+              >Service 
+            </a>
           </li>
           <li class="dropdown" id="blogDropdownWrapper">
-            <a href="./Pages/blog.html">Blog </a>
+            <a href="./Pages/blog.html">Blog </a>           
           </li>
           <li><a href="./Pages/contact.html">Contact Us</a></li>
           <li><a href="./Pages/dashboard.html">Dashboard</a></li>
@@ -69,571 +77,504 @@
       >
     </nav>
 
-    <div class="home-about">
-      <img
-        class="home-main-img"
-        src="./images/a1.webp"
-        alt=""
-      />
-      <div data-aos="zoom-in" class="home-about-child">
-        <p class="aa">We Have Top IT Expert</p>
-        <h1>Best IT Service SERVICE & SOLUTION 2025</h1>
-        <a href="./Pages/about.html"
-          ><button class="home-about-child-button">ABOUT US</button></a
-        >
-      </div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-up">
+                <i class="fas fa-crown"></i>
+                Top IT Solutions Provider
+            </div>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">Transform Your Business with Premium IT Excellence</h1>
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="200">Build scalable solutions with our expert team. From cloud services to AI innovation, we deliver results that drive growth.</p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                <a href="./Pages/error.html" class="hero-btn-primary">Explore Services</a>
+                <a href="./Pages/contact.html" class="hero-btn-secondary">Contact Us</a>
+            </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left">
+            <!-- Replace with your hero image -->
+            <img src="./images/a1.webp" alt="IT Solutions" class="float">
+        </div>
+    </section>
+
+
+    <!-- ==================== FEATURED PROJECTS SECTION ==================== -->
+<section class="projects">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="fas fa-star"></i>
+                Featured Projects
+            </div>
+            <h2 class="section-title">Our Latest Success Stories</h2>
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./images/e2.webp" alt="E-commerce Platform">
+                    <div class="project-category">E-Commerce</div>
+                </div>
+                <div class="project-content">
+                    <h3>Elite Shop Pro</h3>
+                    <p>Complete e-commerce solution with advanced inventory management, payment gateway integration, and mobile-first design.</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-users"></i> 50K+ Users</span>
+                        <span><i class="fas fa-chart-line"></i> 300% Growth</span>
+                    </div>
+                    <a href="./Pages/error.html" class="project-link">
+                        View Case Study <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card featured">
+                <div class="project-badge">Most Popular</div>
+                <div class="project-image">
+                    <img src="./images/e3.webp" alt="Fintech Dashboard">
+                    <div class="project-category">FinTech</div>
+                </div>
+                <div class="project-content">
+                    <h3>FinTrack Dashboard</h3>
+                    <p>Real-time financial analytics platform with AI-powered insights, secure data visualization, and multi-currency support.</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-users"></i> 120K+ Users</span>
+                        <span><i class="fas fa-dollar-sign"></i> $2M+ Revenue</span>
+                    </div>
+                    <a href="./Pages/error.html" class="project-link">
+                        View Case Study <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./images/e4.webp" alt="SaaS Platform">
+                    <div class="project-category">SaaS</div>
+                </div>
+                <div class="project-content">
+                    <h3>TeamFlow Manager</h3>
+                    <p>Collaborative project management tool with workflow automation, team communication, and performance tracking.</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-users"></i> 80K+ Users</span>
+                        <span><i class="fas fa-trophy"></i> Award Winner</span>
+                    </div>
+                    <a href="./Pages/error.html" class="project-link">
+                        View Case Study <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
 
-    <section class="hero">
-      <div class="hero-content">
-        <span data-aos="zoom-in-up" class="tag">Fintech Company Branding</span>
-        <h1 data-aos="zoom-in-up">Grow Your Online Store With Experts</h1>
-        <p data-aos="zoom-in-up">
-          Build a strong business without investing time and money into it.
-        </p>
 
-        <div data-aos="zoom-in-up" class="cta">
-          <a href="././Pages/error.html" class="btn1">Get In Touch</a>
-          <div class="phone">
-            <p>Phone Number</p>
-            <h4>
-              <span class="icon"><i class="fa-solid fa-phone"></i></span> +91
-              7891234567
-            </h4>
-          </div>
+
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <div class="section-badge" data-aos="zoom-in">Our Expertise</div>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Premium IT Services</h2>
         </div>
-      </div>
-
-      <div data-aos="flip-left" class="hero-image">
-        <img
-          src="./images/a2.webp"
-          alt="Business Globe"
-        />
-      </div>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3>Cloud Services</h3>
+                <p>Scalable cloud infrastructure with enterprise-grade security and performance optimization.</p>
+                <a href="./Pages/error.html" class="service-link">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>UI/UX Development</h3>
+                <p>Beautiful, intuitive interfaces that convert visitors into loyal customers.</p>
+                <a href="./Pages/error.html" class="service-link">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3>Digital Marketing</h3>
+                <p>Data-driven strategies that deliver measurable ROI and business growth.</p>
+                <a href="./Pages/error.html" class="service-link">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Custom web applications built with modern frameworks and best practices.</p>
+                <a href="./Pages/error.html" class="service-link">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Machine Learning</h3>
+                <p>AI-powered solutions that automate processes and unlock new opportunities.</p>
+                <a href="./Pages/error.html" class="service-link">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+              <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">
+                   <i class="fa-solid fa-magnifying-glass-chart"></i>
+                </div>
+                <h3>Data Analyst</h3>
+                <p>Data-driven strategies that deliver measurable ROI and business growth.</p>
+                <a href="./Pages/error.html" class="service-link">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
     </section>
 
-    <div class="services-container">
-      <div
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-        class="service-card"
-      >
-        <div class="icon"><i class="fa-solid fa-cloud"></i></div>
-        <h3 data-aos="fade-up">Cloud Services</h3>
-        <p data-aos="fade-up">
-          Deliver plug commerce with dynamic is expertise. leading edge products
-          with business models
-        </p>
-        <a
-          data-aos="fade-up"
-          href="./Pages/Explanation/web.html#c1"
-          class="cont-btn"
-          >READ MORE <i class="fa-solid fa-arrow-right"></i
-        ></a>
-      </div>
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="stat-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="stat-number" data-target="750">0</div>
+                <div class="stat-label">Successful Projects</div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-number" data-target="150">0</div>
+                <div class="stat-label">Expert Team Members</div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="stat-number" data-target="125">0</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="stat-number" data-target="25">0</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+        </div>
+    </section>
 
-      <div
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-        class="service-card"
-      >
-        <div class="icon"><i class="fa-solid fa-code"></i></div>
-        <h3 data-aos="fade-up">UI Development</h3>
-        <p data-aos="fade-up">
-          Deliver plug commerce with dynamic is expertise. leading edge products
-          with business models
-        </p>
-        <a
-          data-aos="fade-up"
-          href="./Pages/Explanation/web.html#c2"
-          class="cont-btn"
-          >READ MORE <i class="fa-solid fa-arrow-right"></i
-        ></a>
-      </div>
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="section-header">
+            <div class="section-badge" data-aos="zoom-in" style="background: linear-gradient(135deg, var(--accent-blue), var(--secondary-blue));">Meet the Experts</div>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Our Leadership Team</h2>
+        </div>
+        <div class="team-grid">
+            <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="./images/p1.webp" alt="Jerzzy Lamot" class="team-avatar">
+                <div class="team-role">Founder & CEO</div>
+                <h3 class="team-name">Jerzzy Lamot</h3>
+                <div class="team-contact">
+                    <i class="fas fa-phone" style="color: var(--secondary-blue);"></i>
+                    +89(0) 1256 2156
+                </div>
+            </div>
+            <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="./images/p2.webp" alt="Molee Marlin" class="team-avatar">
+                <div class="team-role">Co-Founder</div>
+                <h3 class="team-name">Molee Marlin</h3>
+                <div class="team-contact">
+                    <i class="fas fa-phone" style="color: var(--secondary-blue);"></i>
+                    +89(0) 1256 2156
+                </div>
+            </div>
+            <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="./images/p3.webp" alt="Marian Poly" class="team-avatar">
+                <div class="team-role">Manager</div>
+                <h3 class="team-name">Marian Poly</h3>
+                <div class="team-contact">
+                    <i class="fas fa-phone" style="color: var(--secondary-blue);"></i>
+                    +89(0) 1256 2156
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <div
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-        class="service-card"
-      >
-        <div class="icon"><i class="fa-solid fa-bullhorn"></i></div>
-        <h3 data-aos="fade-up">Digital Marketing</h3>
-        <p data-aos="fade-up">
-          Deliver plug commerce with dynamic is expertise. leading edge products
-          with business models
-        </p>
-        <a
-          data-aos="fade-up"
-          href="./Pages/Explanation/web.html#c3"
-          class="cont-btn"
-          >READ MORE <i class="fa-solid fa-arrow-right"></i
-        ></a>
-      </div>
 
-      <div
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-        class="service-card"
-      >
-        <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
-        <h3 data-aos="fade-up">Web Development</h3>
-        <p data-aos="fade-up">
-          Deliver plug commerce with dynamic is expertise. leading edge products
-          with business models
-        </p>
-        <a
-          data-aos="fade-up"
-          href="./Pages/Explanation/web.html#c4"
-          class="cont-btn"
-          >READ MORE <i class="fa-solid fa-arrow-right"></i
-        ></a>
-      </div>
-
-      <div
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-        class="service-card"
-      >
-        <div class="icon"><i class="fa-solid fa-gears"></i></div>
-        <h3 data-aos="fade-up">Software Services</h3>
-        <p data-aos="fade-up">
-          Deliver plug commerce with dynamic is expertise. leading edge products
-          with business models
-        </p>
-        <a
-          data-aos="fade-up"
-          href="./Pages/Explanation/web.html#c5"
-          class="cont-btn"
-          >READ MORE <i class="fa-solid fa-arrow-right"></i
-        ></a>
-      </div>
-
-      <div
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-        class="service-card"
-      >
-        <div class="icon"><i class="fa-solid fa-brain"></i></div>
-        <h3 data-aos="fade-up">Machine Learning</h3>
-        <p data-aos="fade-up">
-          Deliver plug commerce with dynamic is expertise. leading edge products
-          with business models
-        </p>
-        <a
-          data-aos="fade-up"
-          href="./Pages/Explanation/web.html#c6"
-          class="cont-btn"
-          >READ MORE <i class="fa-solid fa-arrow-right"></i
-        ></a>
-      </div>
+   <!-- ==================== TESTIMONIALS SECTION ==================== -->
+<section class="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge" data-aos="zoom-in">
+                <i class="fas fa-quote-left"></i>
+                Client Success
+            </div>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">What Our Clients Say</h2>
+        </div>
+        
+        <div class="testimonials-slider">
+            <div class="testimonial-track">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Stackly transformed our e-commerce platform with lightning-fast performance and stunning UI. Our conversion rates jumped 300% in just 3 months!"</p>
+                        <div class="testimonial-author">
+                            <img src="./images/p1.webp" alt="Sarah Chen" class="author-avatar">
+                            <div>
+                                <h4>Sarah Chen</h4>
+                                <span>CEO, Elite Shop Pro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Their FinTech dashboard is a game-changer. Real-time analytics with enterprise-grade security—our investors are thrilled with the results."</p>
+                        <div class="testimonial-author">
+                            <img src="./images/p2.webp" alt="David Patel" class="author-avatar">
+                            <div>
+                                <h4>David Patel</h4>
+                                <span>CTO, FinTrack Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"TeamFlow Manager has revolutionized our project workflows. The automation features saved us 40+ hours per week."</p>
+                        <div class="testimonial-author">
+                            <img src="./images/p3.webp" alt="Lisa Wong" class="author-avatar">
+                            <div>
+                                <h4>Lisa Wong</h4>
+                                <span>Operations Director, TechCorp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Duplicate for smooth loop -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"Stackly transformed our e-commerce platform with lightning-fast performance and stunning UI. Our conversion rates jumped 300% in just 3 months!"</p>
+                        <div class="testimonial-author">
+                            <img src="./images/p1.webp" alt="Sarah Chen" class="author-avatar">
+                            <div>
+                                <h4>Sarah Chen</h4>
+                                <span>CEO, Elite Shop Pro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
 
-    <section class="agency-section">
-      <div class="agency-content">
-        <h4 data-aos="zoom-in-up" class="tagline">BEST CONSULTING AGENCY</h4>
-        <h1 data-aos="zoom-in-up" class="headline">
-          Our Agency have All Good Solutions
-        </h1>
-        <p data-aos="zoom-in-up" class="description">
-          Analyzing competing products or services can give you an idea of what
-          already exists in your industry. This can help you find ways to
-          improve your idea. It can also help you target weaknesses.
-        </p>
-
-        <div data-aos="zoom-in-up" class="experience">
-          <span class="icon">🔔</span>
-          <p>
-            We Have
-            <a href="././Pages/error.html">25+ Years Of Experience</a> In Giving
-            You Better Quality Results...
-          </p>
-        </div>
-
-        <div class="features">
-          <div data-aos="flip-up" class="feature-box">
-            <div class="feature-icon">📋</div>
-            <h3>Reliable and Proven</h3>
-          </div>
-          <div data-aos="flip-up" class="feature-box">
-            <div class="feature-icon">⭐</div>
-            <h3>Best Team Members</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="agency-images">
-        <div data-aos="flip-right" class="img-box">
-          <img
-            src="./images/a3.webp"
-            alt="Team Discussion"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section id="impact" data-aos="fade-up" class="stats-section">
-      <div data-aos="zoom-in" class="stat-box">
-        <div class="icon2">
-          <i class="fas fa-chart-line"></i>
-        </div>
-        <h2 class="counter" data-target="750">0</h2>
-        <p>SUCCESSFUL PROJECTS</p>
-      </div>
-
-      <div data-aos="zoom-in" class="stat-box">
-        <div class="icon2">
-          <i class="fas fa-bullhorn"></i>
-        </div>
-        <h2 class="counter" data-target="350">0</h2>
-        <p>MEDIA ACTIVITIES</p>
-      </div>
-
-      <div data-aos="zoom-in" class="stat-box">
-        <div class="icon2">
-          <i class="fas fa-user-tie"></i>
-        </div>
-        <h2 class="counter" data-target="150">0</h2>
-        <p>SKILLED EXPERTS</p>
-      </div>
-
-      <div data-aos="zoom-in" class="stat-box">
-        <div class="icon2">
-          <i class="fas fa-users"></i>
-        </div>
-        <h2 class="counter" data-target="125"></h2>
-        <p>HAPPY CLIENTS</p>
-      </div>
-    </section>
-    <section id="team1" class="experts-section">
-      <h4 data-aos="fade-up" style="text-align: center">Meet Our Experts</h4>
-      <h1
-        data-aos="fade-up"
-        style="
-          background: linear-gradient(
-            to right,
-            rgb(84, 136, 241),
-            rgb(8, 68, 147)
-          );
-          background-clip: text;
-          color: transparent;
-          text-align: center;
-          padding-top: 10px;
-          font-size: 30px;
-          padding-bottom: 15px;
-        "
-      >
-        Company Experts
-      </h1>
-      <div class="carousel">
-        <div class="carousel-track">
-          <!-- 6 Original Experts -->
-          <div class="card">
-            <img
-              data-aos="zoom-in"
-              src="./images/p1.webp"
-              alt="Expert"
-            />
-            <h4 data-aos="fade-up">FOUNDER & CEO</h4>
-            <h3 data-aos="fade-up">Jerzzy Lamot</h3>
-            <p data-aos="fade-up">
-              <i style="color: blue" class="fa-solid fa-phone"></i> +89(0) 1256
-              2156
-            </p>
-          </div>
-
-          <div class="card">
-            <img
-              data-aos="zoom-in"
-              src="./images/p2.webp"
-              alt="Expert"
-            />
-            <h4 data-aos="fade-up">Co-Founder</h4>
-            <h3 data-aos="fade-up">Molee Marlin</h3>
-            <p data-aos="fade-up">
-              <i
-                data-aos="fade-up"
-                style="color: blue"
-                class="fa-solid fa-phone"
-              ></i>
-              +89(0) 1256 2156
-            </p>
-          </div>
-
-          <div class="card">
-            <img
-              data-aos="zoom-in"
-              src="./images/p3.webp"
-              alt="Expert"
-            />
-            <h4 data-aos="fade-up">Manager</h4>
-            <h3 data-aos="fade-up">Marian Poly</h3>
-            <p data-aos="fade-up">
-              <i style="color: blue" class="fa-solid fa-phone"></i> +89(0) 1256
-              2156
-            </p>
-          </div>
-
-          <div class="card">
-            <img
-              data-aos="zoom-in"
-              src="./images/p4.webp"
-              alt="Expert"
-            />
-            <h4 data-aos="fade-up">Manager</h4>
-            <h3 data-aos="fade-up">Sarah James</h3>
-            <p data-aos="fade-up">
-              <i style="color: blue" class="fa-solid fa-phone"></i> +89(0) 2156
-              4587
-            </p>
-          </div>
-
-          <div class="card">
-            <img
-              data-aos="zoom-in"
-              src="./images/p5.webp"
-              alt="Expert"
-            />
-            <h4 data-aos="fade-up">Designer</h4>
-            <h3 data-aos="fade-up">Alex Brown</h3>
-            <p data-aos="fade-up">
-              <i style="color: blue" class="fa-solid fa-phone"></i> +89(0) 7894
-              5623
-            </p>
-          </div>
-
-          <div class="card">
-            <img
-              data-aos="zoom-in"
-              src="./images/p6.webp"
-              alt="Expert"
-            />
-            <h4 data-aos="fade-up">Developer</h4>
-            <h3 data-aos="fade-up">Romina Roman</h3>
-            <p data-aos="fade-up">
-              <i style="color: blue" class="fa-solid fa-phone"></i> +89(0) 3214
-              8856
-            </p>
-          </div>
-
-          <!-- Duplicate 6 Experts (for smooth infinite scrolling) -->
-          <div class="card">
-            <img
-              data-aos="zoom-in"
-              src="./images/p1.webp"
-              alt="Expert"
-            />
-            <h4 data-aos="fade-up">FOUNDER & CEO</h4>
-            <h3 data-aos="fade-up">Jerzzy Lamot</h3>
-            <p data-aos="fade-up">
-              <i style="color: blue" class="fa-solid fa-phone"></i> +89(0) 1256
-              2156
-            </p>
-          </div>
-
-          <div class="card">
-            <img
-              data-aos="zoom-in"
-              src="./images/p2.webp"
-              alt="Expert"
-            />
-            <h4 data-aos="fade-up">Co-Founder</h4>
-            <h3 data-aos="fade-up">Molee Marlin</h3>
-            <p data-aos="fade-up">
-              <i style="color: blue" class="fa-solid fa-phone"></i> +89(0) 1256
-              2156
-            </p>
-          </div>
-
-          <div class="card">
-            <img
-              data-aos="zoom-in"
-              src="./images/p3.webp"
-              alt="Expert"
-            />
-            <h4 data-aos="fade-up">Manager</h4>
-            <h3 data-aos="fade-up">Marian Poly</h3>
-            <p data-aos="fade-up">
-              <i style="color: blue" class="fa-solid fa-phone"></i> +89(0) 1256
-              2156
-            </p>
-          </div>
-
-          <div class="card">
-            <img
-              data-aos="zoom-in"
-              src="./images/p4.webp"
-              alt="Expert"
-            />
-            <h4 data-aos="fade-up">Manager</h4>
-            <h3 data-aos="fade-up">Sarah James</h3>
-            <p data-aos="fade-up">
-              <i style="color: blue" class="fa-solid fa-phone"></i> +89(0) 2156
-              4587
-            </p>
-          </div>
-
-          <div class="card">
-            <img
-              data-aos="zoom-in"
-              src="./images/p5.webp"
-              alt="Expert"
-            />
-            <h4 data-aos="fade-up">Designer</h4>
-            <h3 data-aos="fade-up">Alex Brown</h3>
-            <p data-aos="fade-up">
-              <i style="color: blue" class="fa-solid fa-phone"></i> +89(0) 7894
-              5623
-            </p>
-          </div>
-
-          <div class="card">
-            <img
-              data-aos="zoom-in"
-              src="./images/p6.webp"
-              alt="Expert"
-            />
-            <h4 data-aos="fade-up">Developer</h4>
-            <h3 data-aos="fade-up">Romina Roman</h3>
-            <p data-aos="fade-up">
-              <i style="color: blue" class="fa-solid fa-phone"></i> +89(0) 3214
-              8856
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="how-we-work">
-      <h2 data-aos="fade-up" class="section-title">HOW WE WORKS</h2>
-      <div class="work-container">
-        <div class="work-left">
-          <p data-aos="zoom-in" class="team-text">GREAT TEAM MEMBERS</p>
-          <h3 data-aos="zoom-in">
-            HOW WE WORKING FOR OUR CLIENTS OR CUSTOMERS
-          </h3>
-          <a data-aos="zoom-in" href="././Pages/contact.html" class="btn"
-            >CONTACT NOW</a
-          >
-        </div>
-
-        <div class="work-right">
-          <div data-aos="flip-left" class="work-card">
-            <span data-aos="fade-up" class="number">01</span>
-            <div data-aos="fade-up" class="icon">
-              <i style="color: gray" class="fa-solid fa-magnifying-glass"></i>
+<!-- ==================== PRICING SECTION ==================== -->
+<section class="pricing" id="pricing">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge" data-aos="zoom-in" style="background: linear-gradient(135deg, var(--accent-blue), var(--secondary-blue));">
+                <i class="fas fa-tags"></i>
+                Flexible Plans
             </div>
-            <h4 data-aos="fade-up">Problem Analysis</h4>
-            <p data-aos="fade-up">
-              Completely implement via highly efficient process improvements.
-              Engage high value before progressive data.
-            </p>
-          </div>
-
-          <div data-aos="flip-left" class="work-card">
-            <span data-aos="fade-up" class="number">02</span>
-            <div data-aos="fade-up" class="icon">
-              <i style="color: gold" class="fa-solid fa-lightbulb"></i>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Choose Your Perfect Plan</h2>
+        </div>
+        
+        <div class="pricing-grid">
+            <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="pricing-header">
+                    <h3>Starter</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">99</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> Basic Website</li>
+                    <li><i class="fas fa-check"></i> 5 Pages</li>
+                    <li><i class="fas fa-check"></i> Mobile Responsive</li>
+                    <li><i class="fas fa-check"></i> Email Support</li>
+                </ul>
+                <a href="./Pages/error.html" class="pricing-cta">Get Started</a>
             </div>
-            <h4 data-aos="fade-up">Planning</h4>
-            <p data-aos="fade-up">
-              Completely implement via highly efficient process improvements.
-              Engage high value before progressive data.
-            </p>
-          </div>
-
-          <div data-aos="flip-left" class="work-card">
-            <span data-aos="fade-up" class="number">03</span>
-            <div data-aos="fade-up" class="icon">
-              <i style="color: blue" class="fa-solid fa-robot"></i>
+            
+            <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="200">
+                <div class="pricing-badge">Most Popular</div>
+                <div class="pricing-header">
+                    <h3>Business</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">299</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> Custom Website</li>
+                    <li><i class="fas fa-check"></i> 15 Pages</li>
+                    <li><i class="fas fa-check"></i> SEO Optimization</li>
+                    <li><i class="fas fa-check"></i> 24/7 Support</li>
+                    <li><i class="fas fa-check"></i> Analytics Dashboard</li>
+                </ul>
+                <a href="./Pages/error.html" class="pricing-cta">Get Started</a>
             </div>
-            <h4 data-aos="fade-up">Solve Problems</h4>
-            <p data-aos="fade-up">
-              Completely implement via highly efficient process improvements.
-              Engage high value before progressive data.
-            </p>
-          </div>
-
-          <div data-aos="flip-left" class="work-card">
-            <span data-aos="fade-up" class="number">04</span>
-            <div data-aos="fade-up" class="icon">
-              <i
-                style="color: rgb(223, 148, 10)"
-                class="fa-solid fa-rocket"
-              ></i>
+            
+            <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="pricing-header">
+                    <h3>Enterprise</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">999</span>
+                        <span class="period">/mo</span>
+                    </div>
+                </div>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> Full Platform</li>
+                    <li><i class="fas fa-check"></i> Unlimited Pages</li>
+                    <li><i class="fas fa-check"></i> AI Integration</li>
+                    <li><i class="fas fa-check"></i> Dedicated Team</li>
+                    <li><i class="fas fa-check"></i> White-label</li>
+                </ul>
+                <a href="./Pages/error.html" class="pricing-cta">Get Started</a>
             </div>
-            <h4 data-aos="fade-up">Deliver to Customers</h4>
-            <p data-aos="fade-up">
-              Completely implement via highly efficient process improvements.
-              Engage high value before progressive data.
-            </p>
-          </div>
         </div>
-      </div>
-    </section>
-
-    <div class="slider">
-      <h2
-        data-aos="zoom-in"
-        style="
-          text-align: center;
-          padding-top: 10px;
-          font-weight: 500;
-          padding-bottom: 15px;
-        "
-      >
-        Our Trusted Clients
-      </h2>
-      <div class="slide-track">
-        <div class="slide">
-          <h3 class="blue">BUSINESS</h3>
-          <p>commercial property</p>
-        </div>
-        <div class="slide">
-          <h3 class="green">greenlab</h3>
-          <p>biotechnology</p>
-        </div>
-        <div class="slide">
-          <h3 class="red">SUPREME</h3>
-          <p>creative letters</p>
-        </div>
-        <div class="slide">
-          <h3 class="yellow">CRYSTAL</h3>
-          <p>CREATIVE GEMS</p>
-        </div>
-        <div class="slide">
-          <h3 class="purple">DIGITAL PRO</h3>
-          <p>tech solutions</p>
-        </div>
-        <div class="slide">
-          <h3 class="orange">NEXTGEN</h3>
-          <p>future ideas</p>
-        </div>
-        <div class="slide">
-          <h3 class="teal">AQUA</h3>
-          <p>marine services</p>
-        </div>
-        <div class="slide">
-          <h3 class="pink">FLORA</h3>
-          <p>organic products</p>
-        </div>
-        <div class="slide">
-          <h3 class="brown">EARTH</h3>
-          <p>construction</p>
-        </div>
-        <div class="slide">
-          <h3 class="gray">METRO</h3>
-          <p>urban planning</p>
-        </div>
-      </div>
     </div>
+</section>
 
-    <footer class="footer">
+
+<!-- ==================== PROCESS SECTION ==================== -->
+<section class="process" id="process">
+    <div class="section-header">
+        <div class="section-badge" data-aos="zoom-in" style="background: linear-gradient(135deg, var(--accent-blue), var(--secondary-blue));">
+            <i class="fas fa-rocket"></i> Our Workflow
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">How We Deliver Excellence</h2>
+    </div>
+    
+    <div class="process-container">
+        <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+            <div class="step-number">01</div>
+            <div class="step-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <h3>Discovery & Analysis</h3>
+            <p>We deep-dive into your business needs, analyze challenges, and identify opportunities for growth.</p>
+        </div>
+        
+        <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-number">02</div>
+            <div class="step-icon">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Strategic Planning</h3>
+            <p>Crafting tailored strategies with clear milestones, timelines, and measurable success metrics.</p>
+        </div>
+        
+        <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-number">03</div>
+            <div class="step-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <h3>Development & Testing</h3>
+            <p>Building robust solutions with rigorous testing to ensure flawless performance and security.</p>
+        </div>
+        
+        <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+            <div class="step-number">04</div>
+            <div class="step-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Launch & Support</h3>
+            <p>Seamless deployment followed by ongoing support, optimization, and continuous improvement.</p>
+        </div>
+    </div>
+    
+    <div class="process-cta" data-aos="zoom-in" data-aos-delay="500">
+        <a href="./Pages/error.html" class="hero-btn-primary">Start Your Project</a>
+    </div>
+</section>
+
+<!-- ==================== TRUSTED CLIENTS SECTION ==================== -->
+<section class="clients" id="clients">
+    <div class="section-header">
+        <div class="section-badge" data-aos="zoom-in">
+            <i class="fas fa-users"></i> Trusted Partners
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Brands We Work With</h2>
+    </div>
+    
+    <div class="clients-slider">
+        <div class="slide-track">
+            <!-- Client logos with colored text brands -->
+            <div class="client-slide">
+                <div class="client-logo blue">BUSINESS</div>
+                <p>Commercial Property</p>
+            </div>
+            <div class="client-slide">
+                <div class="client-logo green">GREENLAB</div>
+                <p>Biotechnology</p>
+            </div>
+            <div class="client-slide">
+                <div class="client-logo purple">DIGITAL PRO</div>
+                <p>Tech Solutions</p>
+            </div>
+            <div class="client-slide">
+                <div class="client-logo orange">NEXTGEN</div>
+                <p>Future Ideas</p>
+            </div>
+            <div class="client-slide">
+                <div class="client-logo teal">AQUA</div>
+                <p>Marine Services</p>
+            </div>
+            <div class="client-slide">
+                <div class="client-logo pink">FLORA</div>
+                <p>Organic Products</p>
+            </div>
+            <!-- Duplicate for infinite scroll -->
+            <div class="client-slide">
+                <div class="client-logo blue">BUSINESS</div>
+                <p>Commercial Property</p>
+            </div>
+            <div class="client-slide">
+                <div class="client-logo green">GREENLAB</div>
+                <p>Biotechnology</p>
+            </div>
+            <div class="client-slide">
+                <div class="client-logo purple">DIGITAL PRO</div>
+                <p>Tech Solutions</p>
+            </div>
+            <div class="client-slide">
+                <div class="client-logo orange">NEXTGEN</div>
+                <p>Future Ideas</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="cta-content">
+            <h2 class="cta-title" data-aos="zoom-in">Ready to Transform Your Business?</h2>
+            <p class="cta-description" data-aos="zoom-in" data-aos-delay="100">Let's discuss your project and create something extraordinary together.</p>
+            <a href="./Pages/error.html" class="hero-btn-primary" style="display: inline-block; font-size: 1.1rem; padding: 1.25rem 3rem;" data-aos="zoom-in" data-aos-delay="200">Start Your Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+ 
+   <footer class="footer">
       <div class="footer-top">
         <div class="footer-box">
           <i class="fas fa-map-marker-alt"></i>
@@ -672,7 +613,7 @@
 
         <div class="links">
           <h3>Links</h3>
-          <a href="./Pages/service.html#team2">Team</a>
+          <a href="./Pages/service.html">Team</a>
           <a href="./Pages/blog.html">Projects</a>
           <a href="./Pages/contact.html">Contact Us</a>
           <a href="./Pages/service.html">Service</a>
@@ -681,7 +622,7 @@
 
         <div class="explore">
           <h3>Explore</h3>
-          <a href="./Pages/service.html#team2">Team</a>
+          <a href="./Pages/service.html">Team</a>
           <a href="./Pages/blog.html">Pricing Plan</a>
           <a href="./Pages/service.html">Service</a>
           <a href="./Pages/about.html">About Us</a>
@@ -709,100 +650,26 @@
       </div>
     </footer>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const counters = document.querySelectorAll(".counter");
-        const speed = 150;
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   
 
-        const animateCounter = (counter) => {
-          const target = +counter.getAttribute("data-target");
-          const updateCount = () => {
-            const count = +counter.innerText;
-            const increment = Math.ceil(target / speed);
+      <script>
+  //  mode
+    const toggleBtn = document.getElementById("mode-toggle");
+    const body = document.body;
 
-            if (count < target) {
-              counter.innerText = count + increment;
-              setTimeout(updateCount, 20);
-            } else {
-              counter.innerText = target;
-            }
-          };
-          updateCount();
-        };
-
-        const observer = new IntersectionObserver(
-          (entries, observer) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                animateCounter(entry.target);
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.5 }
-        );
-
-        counters.forEach((counter) => {
-          observer.observe(counter);
-        });
-      });
-    </script>
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+      if (body.classList.contains("dark-mode")) {
+        toggleBtn.textContent = "☀️"; 
+      } else {
+        toggleBtn.textContent = "🌑"; 
+      }
+    });
+  </script>
 
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const counters = document.querySelectorAll(".counter");
-        const speed = 150;
-
-        const animateCounter = (counter) => {
-          const target = +counter.getAttribute("data-target");
-          const updateCount = () => {
-            const count = +counter.innerText;
-            const increment = Math.ceil(target / speed);
-
-            if (count < target) {
-              counter.innerText = count + increment;
-              setTimeout(updateCount, 20);
-            } else {
-              counter.innerText = target;
-            }
-          };
-          updateCount();
-        };
-
-        const observer = new IntersectionObserver(
-          (entries, observer) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                animateCounter(entry.target);
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.5 }
-        );
-
-        counters.forEach((counter) => {
-          observer.observe(counter);
-        });
-      });
-    </script>
-
-    <script>
-      //  mode
-      const toggleBtn = document.getElementById("mode-toggle");
-      const body = document.body;
-
-      toggleBtn.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
-        if (body.classList.contains("dark-mode")) {
-          toggleBtn.textContent = "☀️";
-        } else {
-          toggleBtn.textContent = "🌑";
-        }
-      });
-    </script>
-
-    <script>
+      // aos
       // $(document).on('ready', function () {
       // initialization of aos
       AOS.init({
@@ -812,5 +679,44 @@
       });
     </script>
     <script src="./Pages/home.js"></script>
-  </body>
+
+
+
+<script>
+// Stats Counter - Forces ALL 4 to animate
+function animateStats() {
+    const counters = document.querySelectorAll('.stat-number[data-target]');
+    
+    counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        let current = parseInt(counter.innerText.replace(/,/g, '')) || 0;
+        const increment = target / 150;
+        
+        if (current < target) {
+            counter.innerText = Math.ceil(current + increment).toLocaleString();
+            requestAnimationFrame(animateStats);
+        } else {
+            counter.innerText = target.toLocaleString();
+        }
+    });
+}
+
+// Start when ANY stat-item is visible
+const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Reset all to 0 first
+            document.querySelectorAll('.stat-number').forEach(c => c.innerText = '0');
+            animateStats();
+            return;
+        }
+    });
+});
+
+// Observe the entire stats section
+statsObserver.observe(document.querySelector('.stats'));
+</script>
+
+
+</body>
 </html>
