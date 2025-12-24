@@ -174,6 +174,7 @@ body.dark-mode .home-nav a {
     text-align: center;
     color: white;
     overflow: hidden;
+    margin-top: 85px;
 }
 
 .hero-section::before {
@@ -254,7 +255,7 @@ body.dark-mode .home-nav a {
 
 /* Section Spacing */
 .section-padding {
-    padding: 100px 0;
+    padding: 30px 0;
 }
 
 /* Why Choose Section - Perfect 3 Column Grid */
@@ -377,7 +378,7 @@ body.dark-mode .home-nav a {
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 120px 20px;
+    padding: 40px 20px;
 }
 
 .solution-content {
@@ -459,12 +460,12 @@ body.dark-mode .home-nav a {
 /* Services Grid - Perfect 2x2 Grid */
 .services-section {
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-    padding: 120px 20px;
+    padding: 40px 20px;
 }
 
 .services-header {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .services-header .highlight {
@@ -526,13 +527,13 @@ body.dark-mode .home-nav a {
 
 /* Pricing - Perfect Centered Grid */
 .pricing-section {
-    padding: 120px 20px;
+    padding: 50px 20px;
     background: white;
 }
 
 .pricing-header {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .pricing-header .highlight {
@@ -672,7 +673,7 @@ body.dark-mode .home-nav a {
 
 /* Updates Section */
 .updates-section {
-    padding: 120px 20px;
+    padding: 50px 20px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
 }
@@ -731,7 +732,7 @@ body.dark-mode .home-nav a {
 
 .meta {
     font-size: 0.95rem;
-    color: #a5b4fc;
+    color: #000000;
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -929,7 +930,7 @@ body.dark-mode .home-nav a {
 
 /* ==================== RESPONSIVE CLIENTS SLIDER ==================== */
 .slider-section {
-    padding: 100px 20px;
+    padding: 50px 20px;
     background: #f1f5f9;
 }
 

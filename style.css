@@ -159,7 +159,7 @@ body.dark-mode .home-nav a {
 
 /* ==================== PROJECTS SECTION ==================== */
 .projects {
-    padding: 8rem 5%;
+    padding-top: 70px;
     background: linear-gradient(135deg, #f8fafc 0%, white 100%);
     position: relative;
 }
@@ -190,6 +190,9 @@ body.dark-mode .home-nav a {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     border: 1px solid rgba(59,130,246,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-card:hover {
@@ -372,6 +375,8 @@ body.dark-mode .home-nav a {
             padding: 0 5%;
             position: relative;
             overflow: hidden;
+            margin-top: 75px;
+            padding: 50px;
         }
 
         .hero::before {
@@ -502,14 +507,15 @@ body.dark-mode .home-nav a {
 
         /* Services Section */
         .services {
-            padding: 8rem 5%;
+            padding-top: 70px;
             background: var(--light-gray);
+            margin-bottom: 20px;
         }
 
         .section-header {
             text-align: center;
             max-width: 800px;
-            margin: 0 auto 4rem;
+            margin: 0 auto 2rem;
         }
 
         .section-badge {
@@ -542,6 +548,7 @@ body.dark-mode .home-nav a {
             gap: 2rem;
             max-width: 1200px;
             margin: 0 auto;
+
         }
 
         .service-card {
@@ -553,6 +560,9 @@ body.dark-mode .home-nav a {
             border: 1px solid rgba(59, 130, 246, 0.1);
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .service-card::before {
@@ -637,7 +647,7 @@ body.dark-mode .home-nav a {
 
         /* Stats Section */
         .stats {
-            padding: 6rem 5%;
+            padding: 50px;
             background: linear-gradient(135deg, var(--primary-blue), var(--navy));
             color: white;
             position: relative;
@@ -695,7 +705,7 @@ body.dark-mode .home-nav a {
 
         /* Team Section */
         .team {
-            padding: 8rem 5%;
+            padding-top: 70px;
             background: white;
         }
 
@@ -763,13 +773,13 @@ body.dark-mode .home-nav a {
 
         /* ==================== TESTIMONIALS SECTION ==================== */
 .testimonials {
-    padding: 8rem 5%;
+    padding-top: 70px;
     background: linear-gradient(135deg, #f8fafc 0%, white 100%);
 }
 
 .testimonials-slider {
     overflow: hidden;
-    margin-top: 4rem;
+ 
     border-radius: 24px;
 }
 
@@ -848,7 +858,7 @@ body.dark-mode .home-nav a {
 
 /* ==================== PRICING SECTION ==================== */
 .pricing {
-    padding: 8rem 5%;
+    padding-top: 70px;
     background: var(--light-gray);
 }
 
@@ -995,7 +1005,8 @@ body.dark-mode .home-nav a {
 
         /* ==================== PROCESS SECTION STYLES ==================== */
 .process {
-    padding: 8rem 5%;
+    padding: 30px;
+    padding-top: 70px;
     background: linear-gradient(135deg, white 0%, var(--light-gray) 100%);
     position: relative;
     overflow: hidden;
@@ -1116,7 +1127,7 @@ body.dark-mode .home-nav a {
 
 /* ==================== CLIENTS SECTION STYLES ==================== */
 .clients {
-    padding: 6rem 5%;
+    padding-top: 70px;
     background: var(--light-gray);
     position: relative;
 }
@@ -1196,7 +1207,7 @@ body.dark-mode .home-nav a {
 
         /* CTA Section */
         .cta-section {
-            padding: 6rem 5%;
+            padding:40px;
             background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
             color: white;
             text-align: center;
